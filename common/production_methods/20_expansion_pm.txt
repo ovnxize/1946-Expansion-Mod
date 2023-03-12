@@ -12,12 +12,12 @@ pm_landships = {
 		workforce_scaled = {
 			building_input_ammunition_add = 3
 			building_input_tanks_add = 1
-			building_input_oil_add = 2
+			building_input_oil_add = 1
 		}
 
 		level_scaled = {
-			building_employment_soldiers_add = 500
-			building_employment_officers_add = 150
+			building_employment_soldiers_add = 750
+			building_employment_officers_add = 250
 			building_training_rate_add = 30
 		}
 
@@ -97,7 +97,7 @@ pm_medium_tank = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_ammunition_add = 2
+			building_input_ammunition_add = 3
 			building_input_tanks_add = 2
 			building_input_oil_add = 2
 			building_input_radios_add = 1

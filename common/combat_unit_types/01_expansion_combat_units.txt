@@ -1,7 +1,7 @@
 ﻿combat_unit_tank = {
 	max_manpower = 1000
 	type = army
-	icon = "gfx/interface/icons/generic_icons/battalions.dds"
+	icon = "gfx/interface/icons/generic_icons/tanks.dds"
 
 	# Fallback if nothing else matches
 	combat_unit_image = {
