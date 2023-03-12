@@ -1,0 +1,12 @@
+pmg_tank = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_landships
+		pm_light_tank
+		pm_medium_tank
+		pm_heavy_tank
+		pm_super_heavy
+	}
+}

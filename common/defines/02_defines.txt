@@ -1,0 +1,8 @@
+﻿NGame = {
+	START_DATE = "1836.1.1" 
+	END_DATE = "1946.1.1" 
+	SAVE_VERSION = 0
+	MP_LAG_TICKS_BOUNDS = 28 # Host will advance up to a week ahead of players ( 7 * 4 )
+	DEAD_OBJ_UNDESTROYED_DAYS = 0	# number of days "killed"/removed objects will persist in memory before ultimately destroyed as they are referenced by events etc
+	MAX_NUMBER_OF_AUTOSAVES = 5 	# The game will only keep the MAX_NUMBER_OF_AUTOSAVES latest autosaves.
+}

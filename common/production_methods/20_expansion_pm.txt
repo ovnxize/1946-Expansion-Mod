@@ -1,0 +1,132 @@
+# TANK PRODUCTION METHODS
+
+pm_landships = {
+	texture = "gfx/interface/icons/production_method_icons/unused/armored_trains.dds"
+	unlocking_technologies = {
+		mobile_armor
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 3
+			building_input_tanks_add = 1
+			building_input_oil_add = 2
+		}
+
+		level_scaled = {
+			building_employment_soldiers_add = 500
+			building_employment_officers_add = 150
+			building_training_rate_add = 30
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 75
+			unit_defense_add = 75
+		}
+
+		unscaled = {
+			unit_morale_loss_add = 4
+			unit_provinces_captured_mult = 0.20
+			unit_devastation_mult = 0.15
+			# should add Battle Condition chance
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 11
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_light_tank = {
+	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
+	unlocking_technologies = {
+		mobile_armor
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 2
+			building_input_tanks_add = 1
+			building_input_oil_add = 2
+			building_input_radios_add = 1
+		}
+
+		level_scaled = {
+			building_employment_soldiers_add = 800
+			building_employment_officers_add = 200
+			building_training_rate_add = 35
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 85
+			unit_defense_add = 70
+		}
+
+		unscaled = {
+			unit_morale_loss_add = 6
+			unit_provinces_captured_mult = 0.30
+			unit_devastation_mult = 0.10
+			# should add Battle Condition chance
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 11
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_medium_tank = {
+	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
+	unlocking_technologies = {
+		mobile_armor
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 2
+			building_input_tanks_add = 2
+			building_input_oil_add = 2
+			building_input_radios_add = 1
+		}
+
+		level_scaled = {
+			building_employment_soldiers_add = 800
+			building_employment_officers_add = 200
+			building_training_rate_add = 35
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 80
+			unit_defense_add = 80
+		}
+
+		unscaled = {
+			unit_morale_loss_add = 4
+			unit_provinces_captured_mult = 0.25
+			unit_devastation_mult = 0.15
+			# should add Battle Condition chance
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 11
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
