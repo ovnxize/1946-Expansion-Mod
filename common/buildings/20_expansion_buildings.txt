@@ -7,7 +7,7 @@ building_tank = {
 	has_max_level = yes
 
 	unlocking_technologies = {
-		standing_army
+		mobile_armor
 	}
 
 	production_method_groups = {
@@ -21,26 +21,26 @@ building_tank = {
 }
 
 #building_airfield = {
-	building_group = bg_army
-	recruits_combat_unit = combat_unit_regular
-	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
-	city_type = city
-	
-	has_max_level = yes
-	
-	levels_per_mesh = 15
-
-	unlocking_technologies = {
-		military_aviation
-	}
-
-	production_method_groups = {
-		pmg_organization
-		pmg_artillery
-		pmg_reconaissance
-		pmg_specialist_companies
-		pmg_medical_aid
-	}
-
-	required_construction = construction_cost_very_low
+#	building_group = bg_army
+#	recruits_combat_unit = combat_unit_regular
+#	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
+#	city_type = city
+#	
+#	has_max_level = yes
+#	
+#	levels_per_mesh = 15
+#
+#	unlocking_technologies = {
+#		military_aviation
+#	}
+#
+#	production_method_groups = {
+#		pmg_organization
+#		pmg_artillery
+#		pmg_reconaissance
+#		pmg_specialist_companies
+#		pmg_medical_aid
+#	}
+#
+#	required_construction = construction_cost_very_low
 #}

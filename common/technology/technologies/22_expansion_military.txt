@@ -1,0 +1,97 @@
+﻿# Base Reworks
+
+mobile_armor = {
+	# Unlocks Tanks PM in Vehicles Industries
+	# Unlocks Tanks, Planes and Tanks PM in Barracks
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
+	category = military
+	
+	unlocking_technologies = {	
+		automatic_machine_guns
+		concrete_fortifications
+	}
+}
+
+flamethrowers = {
+	# Increases kill rate (lowers opponent survival rate)
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/flamethrowers.dds"
+	category = military
+	
+	unlocking_technologies = {	
+		trench_works
+	}
+	modifier = {
+		unit_kill_rate_add = 0.05
+	}
+}
+
+# Tank Technologies
+
+light_armor = {
+	#Unlocks Light Tank and Medium Tanks
+	#Unlocks Auto-Cannons
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/urban_planning.dds"
+	category = military
+	
+	unlocking_technologies = {	
+		mobile_armor
+		auto_cannons
+	}
+}
+
+heavy_armor = {
+	#Unlocks Heavy and Super Heavy Tanks
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/manufacturies.dds"
+	category = military
+	
+	unlocking_technologies = {	
+		light_armor
+	}
+}
+
+# Infantry Improvements 
+
+smg_equipment = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/rifling.dds"
+	category = military 
+
+	modifiers = {
+		
+	}
+
+	unlocking_technologies = {
+		automatic_machine_guns
+	}
+}
+
+motorized_infantry = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/threshing_machine.dds"
+	category = military 
+
+	modifiers = {
+		
+	}
+
+	unlocking_technologies = {
+		stormtroopers
+		mobile_armor
+	}
+}
+
+# Air Technologies (WIP)
+
+auto_cannons = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/breech_loading_artillery.dds"
+	category = military
+
+	unlocking_technologies = {
+		military_aviation
+	}
+}

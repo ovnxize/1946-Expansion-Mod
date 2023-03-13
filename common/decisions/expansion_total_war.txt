@@ -1,0 +1,33 @@
+total_war_decision_expansion = {
+	
+	is_shown = {
+		country_rank = rank_value:great_power # only visible to great powers 
+		game_date >= 1890.01.01
+	}
+
+	possible = {
+		is_at_war = yes
+		any_country = {
+			has_war_with = root
+			country_rank = rank_value:great_power
+			save_temporary_scope_as = enemy
+			hidden = {
+				root = {
+					any_scope_war = {
+						is_warleader = scope:enemy
+					}
+				}
+			}
+		}
+		has_technology_researched = enlistment_offices
+		has_technology_researched = multilateral_alliances
+		custom_tooltip = { 
+			text = total_war_declared_tooltip
+			NOT = { has_variable = declared_total_war }
+		}
+	}
+
+	when_taken = {
+		
+	}
+}

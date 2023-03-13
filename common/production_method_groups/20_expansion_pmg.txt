@@ -31,7 +31,7 @@ pmg_special_tank = {
 
 	production_methods = {
 		pm_no_extra_special
-		pm_exta_machine_gun
+		pm_extra_machine_gun
 		pm_ammunition_storage
 		pm_extra_fuel
 		pm_sloped_armor
@@ -74,5 +74,18 @@ pmg_specialist_companies = {
 		pm_infiltrators
 		pm_flamethrower_company
 		pm_chemical_weapons_specialists
+	}
+}
+
+pmg_organization_conscription = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_irregular_infantry_conscription
+		pm_line_infantry_conscription
+		pm_skirmish_infantry_conscription
+		pm_trench_infantry_conscription
+		pm_squad_infantry_conscription
 	}
 }

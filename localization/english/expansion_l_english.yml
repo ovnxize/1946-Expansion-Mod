@@ -17,10 +17,28 @@ pm_close_support:0 "Close Support Autocannons"
 pmg_support_tanks:0 "Support Companies"
 pm_maintenance_tank:0 "Maintenance Support"
 pm_logistics:0 "Logistics Support"
-pm_recon_tank:0 "Reonaissance Support"
+pm_recon_tank:0 "Forward Recon Support"
 
 pmg_special_tank:0 "Upgrade Modules"
+pm_no_extra_special:0 "No Upgrades"
+pm_extra_machine_gun:0 "Turrent Mounted Machine Gun"
+pm_ammunition_storage:0 "Ammunition Storage"
+pm_extra_fuel:0 "Fuel Storage"
+pm_sloped_armor:0 "Sloped Armor"
 
 modifier_state_building_tank_max_level_add:0 "Armored Barracks Max Level"
 troop_name_armored:0 "Armored"
 combat_unit_tank:0 "Armored"
+
+total_war_decision_expansion:0 "Declare Total War"
+total_war_decision_expansion_desc:0 "We are not only fighting hostile armies, we are fighting a hostile people. We must make old and young, rich and poor, feel the hard hand of war, as well as their organized armies, for our very existence as a nation is at stake. There is only one solution, one goal, the absolute destruction and humiliation of our enemy."
+total_war_declared_tooltip:0 "[COUNTRY.GetNameNoFlag] has not already declared #b Total War#!"
+
+light_armor:0 "Blitzkrieg"
+light_armor_desc:0 "If we can overrun and encircle our enemies with the unpredencted speed and firepower of tanks before our enemies can put up resistance, all of Europe will be at our whims."
+heavy_armor:0 "Heavy Armor"
+
+auto_cannons:0 "Autocannons"
+
+smg_equipment:0 "Submachine Guns"
+motorized_infantry:0 "Mobile Infantry"

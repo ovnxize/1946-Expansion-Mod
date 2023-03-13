@@ -2,9 +2,6 @@
 
 pm_landships = {
 	texture = "gfx/interface/icons/production_method_icons/unused/armored_trains.dds"
-	unlocking_technologies = {
-		mobile_armor
-	}
 	disallowing_laws = {
 		law_peasant_levies
 	}
@@ -22,13 +19,13 @@ pm_landships = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 75
-			unit_defense_add = 75
+			unit_offense_add = 85
+			unit_defense_add = 85
 		}
 
 		unscaled = {
 			unit_morale_loss_add = 4
-			unit_provinces_captured_mult = 0.15
+			unit_provinces_captured_mult = 0.10
 			unit_devastation_mult = 0.15
 			unit_advancement_speed_mult = 0.05
 			# should add Battle Condition chance
@@ -47,7 +44,7 @@ pm_landships = {
 pm_light_tank = {
 	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
 	unlocking_technologies = {
-		mobile_armor
+		light_armor
 	}
 	disallowing_laws = {
 		law_peasant_levies
@@ -67,8 +64,8 @@ pm_light_tank = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 85
-			unit_defense_add = 70
+			unit_offense_add = 95
+			unit_defense_add = 80
 		}
 
 		unscaled = {
@@ -92,7 +89,7 @@ pm_light_tank = {
 pm_medium_tank = {
 	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
 	unlocking_technologies = {
-		mobile_armor
+		light_armor
 	}
 	disallowing_laws = {
 		law_peasant_levies
@@ -112,8 +109,8 @@ pm_medium_tank = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 80
-			unit_defense_add = 80
+			unit_offense_add = 90
+			unit_defense_add = 90
 		}
 
 		unscaled = {
@@ -137,7 +134,7 @@ pm_medium_tank = {
 pm_heavy_tank = {
 	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
 	unlocking_technologies = {
-		mobile_armor
+		heavy_armor
 	}
 	disallowing_laws = {
 		law_peasant_levies
@@ -157,8 +154,8 @@ pm_heavy_tank = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 80
-			unit_defense_add = 95
+			unit_offense_add = 90
+			unit_defense_add = 105
 		}
 
 		unscaled = {
@@ -181,7 +178,7 @@ pm_heavy_tank = {
 pm_super_heavy = {
 	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
 	unlocking_technologies = {
-		mobile_armor
+		heavy_armor
 	}
 	disallowing_laws = {
 		law_peasant_levies
@@ -201,8 +198,8 @@ pm_super_heavy = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 85
-			unit_defense_add = 110
+			unit_offense_add = 95
+			unit_defense_add = 120
 		}
 
 		unscaled = {
@@ -226,18 +223,15 @@ pm_super_heavy = {
 
 pm_machine_guns_tank = {
 	texture = "gfx/interface/icons/production_method_icons/unused/handcranked_machine_guns.dds"
-	unlocking_technologies = {
-		mobile_armor
-	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_small_arms_add = 2
 			building_input_ammunition_add = 1
 		}
 		throughput_scaled = {
-			unit_defense_add = 35
-			unit_offense_add = 25
+			unit_defense_add = 50
+			unit_offense_add = 40
 		}
 
 		unscaled = {
@@ -259,9 +253,6 @@ pm_machine_guns_tank = {
 pm_cannon_tank = {
 	texture = "gfx/interface/icons/production_method_icons/shrapnel_artillery.dds"
 
-	unlocking_technologies = {
-		mobile_armor
-	}
 	disallowing_laws = {
 		law_peasant_levies
 	}	
@@ -273,8 +264,8 @@ pm_cannon_tank = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 35
-			unit_defense_add = 30
+			unit_offense_add = 55
+			unit_defense_add = 50
 		}
 
 		unscaled = {
@@ -298,7 +289,7 @@ pm_close_support = {
 	texture = "gfx/interface/icons/production_method_icons/machine_gunners.dds"
 
 	unlocking_technologies = {
-		mobile_armor
+		auto_cannons
 	}
 	disallowing_laws = {
 		law_peasant_levies
@@ -311,8 +302,8 @@ pm_close_support = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 45
-			unit_defense_add = 20
+			unit_offense_add = 65
+			unit_defense_add = 40
 		}
 
 		unscaled = {
@@ -341,7 +332,7 @@ pm_no_extra_special = {
 	}
 }
 
-pm_exta_machine_gun = {
+pm_extra_machine_gun = {
 	texture = "gfx/interface/icons/production_method_icons/unused/handcranked_machine_guns.dds"
 
 	disallowing_laws = {
@@ -350,8 +341,8 @@ pm_exta_machine_gun = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_small_arms_add = 1
-			building_input_ammunition_add = 1
+			building_input_small_arms_add = 0.8
+			building_input_ammunition_add = 0.8
 		}
 
 		throughput_scaled = {
@@ -376,22 +367,91 @@ pm_exta_machine_gun = {
 }
 
 pm_sloped_armor = {
+	texture = "gfx/interface/icons/production_method_icons/steam_powered_threshers.dds"
 
+	unlocking_technologies = {
+		heavy_armor
+	}
+
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_steel_add = 2
+		}
+
+		unscaled = { 
+			unit_advancement_speed_mult = -0.1
+			unit_defense_add = 25
+		}
+	}
 }
 
 pm_ammunition_storage = {
+	texture = "gfx/interface/icons/production_method_icons/compression_ignition_tractors.dds"
 
+	unlocking_technologies = {
+		light_armor
+	}
+
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 1
+		}
+
+		unscaled = { 
+			unit_supply_consumption_mult = -0.1
+			unit_advancement_speed_mult = -0.05
+			unit_morale_loss_mult = -0.15
+		}
+	}
 }
 
 pm_extra_fuel = {
+	texture = "gfx/interface/icons/production_method_icons/tanker_cars.dds"
 
+	unlocking_technologies = {
+		heavy_armor
+	}
+
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_oil_add = 1
+		}
+
+		unscaled = { 
+			unit_offense_add = 15
+			unit_morale_loss_mult = -0.15
+			unit_advancement_speed_mult = -0.1
+			unit_provinces_captured_mult = 0.1
+		}
+	}
 }
 
 # SUPPORT GROUPS
 
-pm_maintenance = {
+pm_maintenance_tank = {
 	texture = "gfx/interface/icons/production_method_icons/unused/census.dds"
 
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 0.5
+			building_input_steel_add = 1
+		}
+
+		throughput_scaled = {
+			unit_morale_recovery_mult = 0.15
+			unit_morale_loss_add = -1
+			unit_defense_add = 5
+		}
+	}
 }
 
 pm_logistics = {
@@ -399,35 +459,28 @@ pm_logistics = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_small_arms_add = 1
-			building_input_ammunition_add = 1
+			building_input_automobiles_add = 1
+			building_input_oil_add = 0.5
 		}
 
 		throughput_scaled = {
-			unit_defense_add = 5
-		}
-
-		unscaled = {
-			unit_provinces_lost_mult = 0.02
+			unit_recovery_rate_add = 0.25
+			unit_supply_consumption_mult = -0.15
 		}
 	}
-
 }
 
-pm_engineers = {
+pm_recon_tank = {
 	texture = "gfx/interface/icons/production_method_icons/precision_tools.dds"
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_tools_add = 1
+			building_input_small_arms_add = 1.5
 		}
 
 		throughput_scaled = {
-			unit_defense_add = 5
-		}
-
-		unscaled = {
-			unit_provinces_lost_mult = 0.02
+			unit_offense_add = 5
+			unit_provinces_captured_mult = 0.05
 		}
 	}
 }
