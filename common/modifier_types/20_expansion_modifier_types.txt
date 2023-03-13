@@ -3,3 +3,8 @@ state_building_tank_max_level_add = {
 	percent = no
 	num_decimals = 0
 }
+character_command_limit_combat_unit_tank_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}

@@ -1,3 +1,5 @@
+# Tank PMGs
+
 pmg_tank = {
 	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
 	ai_selection = most_productive
@@ -8,5 +10,69 @@ pmg_tank = {
 		pm_medium_tank
 		pm_heavy_tank
 		pm_super_heavy
+	}
+}
+
+pmg_arms = {
+		texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+		ai_selection = most_productive
+	
+		production_methods = {
+			pm_machine_guns_tank
+			pm_cannon_tank
+			pm_close_support
+			pm_tank_destroyer
+		}
+	}
+
+pmg_special_tank = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_no_extra_special
+		pm_exta_machine_gun
+		pm_ammunition_storage
+		pm_extra_fuel
+		pm_sloped_armor
+	}
+}
+
+pmg_support_tanks = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_maintenance_tank
+		pm_logistics
+		pm_recon_tank
+	}
+}
+
+# Infantry PM Reworks
+
+pmg_organization = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_irregular_infantry
+		pm_line_infantry
+		pm_skirmish_infantry
+		pm_trench_infantry
+		pm_squad_infantry
+	}
+}
+
+pmg_specialist_companies = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_no_specialists
+		pm_machine_gunners
+		pm_infiltrators
+		pm_flamethrower_company
+		pm_chemical_weapons_specialists
 	}
 }

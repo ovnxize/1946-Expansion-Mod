@@ -1,3 +1,26 @@
 ﻿l_english:
 building_tank:0 "Armored Barracks"
 building_barracks:0 "Infantry Barracks"
+
+pmg_tank:0 "Chasis"
+pm_landships:0 "Landship"
+pm_light_tank:0 "Light Tank"
+pm_medium_tank:0 "Medium Tank"
+pm_heavy_tank:0 "Heavy Tank"
+pm_super_heavy:0 "Super Heavy Tank"
+
+pmg_arms:0 "Armament"
+pm_machine_guns_tank:0 "Machine Guns"
+pm_cannon_tank:0 "Cannons"
+pm_close_support:0 "Close Support Autocannons"
+
+pmg_support_tanks:0 "Support Companies"
+pm_maintenance_tank:0 "Maintenance Support"
+pm_logistics:0 "Logistics Support"
+pm_recon_tank:0 "Reonaissance Support"
+
+pmg_special_tank:0 "Upgrade Modules"
+
+modifier_state_building_tank_max_level_add:0 "Armored Barracks Max Level"
+troop_name_armored:0 "Armored"
+combat_unit_tank:0 "Armored"

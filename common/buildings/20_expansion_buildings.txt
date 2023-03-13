@@ -12,6 +12,9 @@ building_tank = {
 
 	production_method_groups = {
 		pmg_tank
+		pmg_arms
+		pmg_special_tank
+		pmg_support_tanks
 	}
 
 	required_construction = construction_cost_very_low

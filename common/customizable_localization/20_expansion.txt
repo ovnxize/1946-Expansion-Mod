@@ -1,0 +1,11 @@
+troop_name = {
+	type = building
+	random_valid = no
+	
+	text = {
+		trigger = {
+			is_building_type = building_tank
+		}
+		localization_key = troop_name_armored
+	}
+}

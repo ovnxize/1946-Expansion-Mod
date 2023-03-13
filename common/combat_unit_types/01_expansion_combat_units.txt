@@ -9,3 +9,15 @@
 		texture = "gfx/unit_illustrations/unit_battalion_mechanized_infantry.dds"
 	}
 }
+
+combat_unit_plane = {
+		max_manpower = 1000
+		type = army
+		icon = "gfx/interface/icons/generic_icons/tanks.dds"
+	
+		# Fallback if nothing else matches
+		combat_unit_image = {
+			trigger = { always = yes }
+			texture = "gfx/unit_illustrations/unit_battalion_mechanized_infantry.dds"
+		}
+	}

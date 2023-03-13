@@ -1,4 +1,4 @@
-# TANK PRODUCTION METHODS
+# TANK CHASIS PRODUCTION METHODS
 
 pm_landships = {
 	texture = "gfx/interface/icons/production_method_icons/unused/armored_trains.dds"
@@ -18,7 +18,7 @@ pm_landships = {
 		level_scaled = {
 			building_employment_soldiers_add = 750
 			building_employment_officers_add = 250
-			building_training_rate_add = 30
+			building_training_rate_add = 15
 		}
 
 		throughput_scaled = {
@@ -28,14 +28,15 @@ pm_landships = {
 
 		unscaled = {
 			unit_morale_loss_add = 4
-			unit_provinces_captured_mult = 0.20
+			unit_provinces_captured_mult = 0.15
 			unit_devastation_mult = 0.15
+			unit_advancement_speed_mult = 0.05
 			# should add Battle Condition chance
 		}
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 11
+			country_army_power_projection_add = 10
 		}
 	}
 	timed_modifiers = {
@@ -60,9 +61,9 @@ pm_light_tank = {
 		}
 
 		level_scaled = {
-			building_employment_soldiers_add = 800
-			building_employment_officers_add = 200
-			building_training_rate_add = 35
+			building_employment_soldiers_add = 850
+			building_employment_officers_add = 150
+			building_training_rate_add = 20
 		}
 
 		throughput_scaled = {
@@ -72,14 +73,15 @@ pm_light_tank = {
 
 		unscaled = {
 			unit_morale_loss_add = 6
-			unit_provinces_captured_mult = 0.30
+			unit_provinces_captured_mult = 0.25
 			unit_devastation_mult = 0.10
+			unit_advancement_speed_mult = 0.15
 			# should add Battle Condition chance
 		}
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 11
+			country_army_power_projection_add = 10
 		}
 	}
 	timed_modifiers = {
@@ -106,7 +108,7 @@ pm_medium_tank = {
 		level_scaled = {
 			building_employment_soldiers_add = 800
 			building_employment_officers_add = 200
-			building_training_rate_add = 35
+			building_training_rate_add = 15
 		}
 
 		throughput_scaled = {
@@ -116,17 +118,316 @@ pm_medium_tank = {
 
 		unscaled = {
 			unit_morale_loss_add = 4
-			unit_provinces_captured_mult = 0.25
+			unit_provinces_captured_mult = 0.15
 			unit_devastation_mult = 0.15
+			unit_advancement_speed_mult = 0.05
 			# should add Battle Condition chance
 		}
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 11
+			country_army_power_projection_add = 15
 		}
 	}
 	timed_modifiers = {
 		pm_offense_defense_readjustment
+	}
+}
+
+pm_heavy_tank = {
+	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
+	unlocking_technologies = {
+		mobile_armor
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 4
+			building_input_tanks_add = 3
+			building_input_oil_add = 2
+			building_input_radios_add = 1
+		}
+
+		level_scaled = {
+			building_employment_soldiers_add = 750
+			building_employment_officers_add = 250
+			building_training_rate_add = 10
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 80
+			unit_defense_add = 95
+		}
+
+		unscaled = {
+			unit_morale_loss_add = 2
+			unit_provinces_captured_mult = 0.05
+			unit_devastation_mult = 0.25
+			# should add Battle Condition chance
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 20
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_super_heavy = {
+	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
+	unlocking_technologies = {
+		mobile_armor
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 4
+			building_input_tanks_add = 4
+			building_input_oil_add = 3
+			building_input_radios_add = 1
+		}
+
+		level_scaled = {
+			building_employment_soldiers_add = 700
+			building_employment_officers_add = 300
+			building_training_rate_add = 10
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 85
+			unit_defense_add = 110
+		}
+
+		unscaled = {
+			unit_morale_loss_add = 4
+			unit_devastation_mult = 0.40
+			unit_advancement_speed_mult = -0.15
+			# should add Battle Condition chance
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 20
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+# TANK ARMAMENT PRODUCTION METHODS
+
+pm_machine_guns_tank = {
+	texture = "gfx/interface/icons/production_method_icons/unused/handcranked_machine_guns.dds"
+	unlocking_technologies = {
+		mobile_armor
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_small_arms_add = 2
+			building_input_ammunition_add = 1
+		}
+		throughput_scaled = {
+			unit_defense_add = 35
+			unit_offense_add = 25
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.1
+			unit_kill_rate_add = 0.3
+			unit_provinces_lost_mult = -0.2
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 3
+		}
+	}	
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_cannon_tank = {
+	texture = "gfx/interface/icons/production_method_icons/shrapnel_artillery.dds"
+
+	unlocking_technologies = {
+		mobile_armor
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_artillery_add = 3
+			building_input_ammunition_add = 2
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 35
+			unit_defense_add = 30
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.35
+			unit_kill_rate_add = 0.1
+			unit_devastation_mult = 0.25
+			unit_advancement_speed_mult = -0.05
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 6
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_close_support = {
+	texture = "gfx/interface/icons/production_method_icons/machine_gunners.dds"
+
+	unlocking_technologies = {
+		mobile_armor
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_artillery_add = 2
+			building_input_ammunition_add = 2
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 45
+			unit_defense_add = 20
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.2
+			unit_kill_rate_add = 0.2
+			unit_devastation_mult = 0.1
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 6
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+# SPECIAL MODULES TANK
+
+pm_no_extra_special = {
+	texture = "gfx/interface/icons/production_method_icons/no_tanks.dds"
+
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_exta_machine_gun = {
+	texture = "gfx/interface/icons/production_method_icons/unused/handcranked_machine_guns.dds"
+
+	disallowing_laws = {
+		law_peasant_levies
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_small_arms_add = 1
+			building_input_ammunition_add = 1
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 10
+			unit_defense_add = 15
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.08
+			unit_kill_rate_add = 0.05
+			unit_provinces_lost_mult = 0.02
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 1
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_sloped_armor = {
+
+}
+
+pm_ammunition_storage = {
+
+}
+
+pm_extra_fuel = {
+
+}
+
+# SUPPORT GROUPS
+
+pm_maintenance = {
+	texture = "gfx/interface/icons/production_method_icons/unused/census.dds"
+
+}
+
+pm_logistics = {
+	texture = "gfx/interface/icons/production_method_icons/automobiles.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_small_arms_add = 1
+			building_input_ammunition_add = 1
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 5
+		}
+
+		unscaled = {
+			unit_provinces_lost_mult = 0.02
+		}
+	}
+
+}
+
+pm_engineers = {
+	texture = "gfx/interface/icons/production_method_icons/precision_tools.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_tools_add = 1
+		}
+
+		throughput_scaled = {
+			unit_defense_add = 5
+		}
+
+		unscaled = {
+			unit_provinces_lost_mult = 0.02
+		}
 	}
 }
