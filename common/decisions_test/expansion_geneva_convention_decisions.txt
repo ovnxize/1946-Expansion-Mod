@@ -1,12 +1,12 @@
-total_war_decision_expansion = {
+create_geneva_convention = {
 	
 	is_shown = {
-		country_rank = rank_value:great_power # only visible to great powers 
-		game_date >= 1890.01.01
+		country = c:SWI
+		game_date >= 1850.01.01
 	}
 
 	possible = {
-		is_at_war = yes
+		is_at_peace = yes
 		any_country = {
 			has_war_with = root
 			country_rank = rank_value:great_power
@@ -19,15 +19,23 @@ total_war_decision_expansion = {
 				}
 			}
 		}
-		has_technology_researched = enlistment_offices
+		has_technology_researched = triage
 		has_technology_researched = multilateral_alliances
 		custom_tooltip = { 
 			text = total_war_declared_tooltip
-			NOT = { has_variable = declared_total_war }
+			NOT = { has_modifier = geneva_convention_creator }
 		}
 	}
 
 	when_taken = {
-		
+		hidden = {
+			add_modifier = geneva_convention_creator
+			months = -1
+		}
+		trigger_event = { geneva_convention }
+	}
+
+	ai_weight = {
+		base = 100
 	}
 }

@@ -1,0 +1,23 @@
+fighting_total_war = {
+	icon = gfx/interface/icons/timed_modifier_icons/unused/modifier_explosion_negative.dds
+}
+
+neutral_nation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+}
+
+signed_geneva_convention = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+}
+
+great_war_victor = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+}
+
+great_war_loser = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+}
+
+great_war_neutral = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+}

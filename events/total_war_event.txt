@@ -1,0 +1,48 @@
+total_war_unlock = {
+	type = country_event
+	placement = root
+	title = total_war_unlock.t
+	desc = total_war_unlock.d
+	flavor = total_war_unlock.f
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	on_yearly_pulse = {
+		trigger = {
+			game_date >= 1890.01.01
+		}
+	}
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	option = {
+		name = total_war_unlock.o
+		highlighted_option = yes
+		custom_tooltip = {
+			text = total_war_unlocked_tooltip
+		}
+	}
+}
+
+total_war_begin = {
+	type = country_event
+	placement = root
+	title = total_war_begin.t
+	desc = total_war_begin.d
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	event_image = {
+		video = "gfx/event_pictures/unspecific_ruler_speaking_to_people.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/UI/unspecific/leader_speaking_to_a_group_of_people"
+
+	option = {
+		name = total_war_begin.0
+		highlighted_option = yes
+	}
+}

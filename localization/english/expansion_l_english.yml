@@ -1,6 +1,11 @@
 ﻿l_english:
+
+# Buildings 
+
 building_tank:0 "Armored Barracks"
 building_barracks:0 "Infantry Barracks"
+
+# Production Methods
 
 pmg_tank:0 "Chasis"
 pm_landships:0 "Landship"
@@ -23,16 +28,30 @@ pmg_special_tank:0 "Upgrade Modules"
 pm_no_extra_special:0 "No Upgrades"
 pm_extra_machine_gun:0 "Turrent Mounted Machine Gun"
 pm_ammunition_storage:0 "Ammunition Storage"
-pm_extra_fuel:0 "Fuel Storage"
+pm_extra_fuel:0 "Diesel Engines"
 pm_sloped_armor:0 "Sloped Armor"
 
+pm_smgs:0 "Submachine Guns"
+
+# Tooltips Exta
+
 modifier_state_building_tank_max_level_add:0 "Armored Barracks Max Level"
+modifier_state_building_tank_max_level_add_desc:0 "A bonus or penalty to the maximum level of Armored Barracks buildings."
+modifier_state_building_arms_industry_level_add:0 "Arms Industry Max Level"
 troop_name_armored:0 "Armored"
 combat_unit_tank:0 "Armored"
+
+# Decisions 
 
 total_war_decision_expansion:0 "Declare Total War"
 total_war_decision_expansion_desc:0 "We are not only fighting hostile armies, we are fighting a hostile people. We must make old and young, rich and poor, feel the hard hand of war, as well as their organized armies, for our very existence as a nation is at stake. There is only one solution, one goal, the absolute destruction and humiliation of our enemy."
 total_war_declared_tooltip:0 "[COUNTRY.GetNameNoFlag] has not already declared #b Total War#!"
+
+# Modifiers
+
+fighting_total_war:0 "Fighting a Total War"
+
+# Technology
 
 light_armor:0 "Blitzkrieg"
 light_armor_desc:0 "If we can overrun and encircle our enemies with the unpredencted speed and firepower of tanks before our enemies can put up resistance, all of Europe will be at our whims."
@@ -42,3 +61,16 @@ auto_cannons:0 "Autocannons"
 
 smg_equipment:0 "Submachine Guns"
 motorized_infantry:0 "Mobile Infantry"
+
+bio_war:0 "Biological Warfare"
+
+# Events
+total_war_unlock.t:0 "A War to End All War"
+total_war_unlock.d:0 "As the 19th century comes to a close, "
+
+# Laws
+
+law_disarmed_military:0 "Disarmed Military"
+law_disarmed_military_desc:0 "Whether by choice or by force, the military sector has been completely abolished."
+
+

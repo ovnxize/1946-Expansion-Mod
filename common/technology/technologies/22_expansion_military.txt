@@ -81,6 +81,17 @@ motorized_infantry = {
 	unlocking_technologies = {
 		stormtroopers
 		mobile_armor
+		nco_training
+	}
+}
+
+rocket_artillery = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/threshing_machine.dds"
+	category = military
+
+	unlocking_technologies = {
+		nco_training
 	}
 }
 
@@ -93,5 +104,17 @@ auto_cannons = {
 
 	unlocking_technologies = {
 		military_aviation
+	}
+}
+
+# Weapons of Mass Destruction 
+
+bio_war = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/breech_loading_artillery.dds"
+	category = military
+
+	unlocking_technologies = {
+		chemical_warfare
 	}
 }

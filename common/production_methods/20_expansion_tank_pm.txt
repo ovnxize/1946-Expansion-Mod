@@ -28,6 +28,7 @@ pm_landships = {
 			unit_provinces_captured_mult = 0.10
 			unit_devastation_mult = 0.15
 			unit_advancement_speed_mult = 0.05
+			unit_recovery_rate_add = 0.10
 			# should add Battle Condition chance
 		}
 	}
@@ -64,7 +65,7 @@ pm_light_tank = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 95
+			unit_offense_add = 100
 			unit_defense_add = 80
 		}
 
@@ -72,7 +73,8 @@ pm_light_tank = {
 			unit_morale_loss_add = 6
 			unit_provinces_captured_mult = 0.25
 			unit_devastation_mult = 0.10
-			unit_advancement_speed_mult = 0.15
+			unit_advancement_speed_mult = 0.20
+			unit_recovery_rate_add = 0.05
 			# should add Battle Condition chance
 		}
 	}
@@ -118,6 +120,7 @@ pm_medium_tank = {
 			unit_provinces_captured_mult = 0.15
 			unit_devastation_mult = 0.15
 			unit_advancement_speed_mult = 0.05
+			unit_recovery_rate_add = 0.10
 			# should add Battle Condition chance
 		}
 	}
@@ -162,6 +165,7 @@ pm_heavy_tank = {
 			unit_morale_loss_add = 2
 			unit_provinces_captured_mult = 0.05
 			unit_devastation_mult = 0.25
+			unit_recovery_rate_add = 0.15
 			# should add Battle Condition chance
 		}
 	}
@@ -206,6 +210,7 @@ pm_super_heavy = {
 			unit_morale_loss_add = 4
 			unit_devastation_mult = 0.40
 			unit_advancement_speed_mult = -0.15
+			unit_recovery_rate_add = 0.25
 			# should add Battle Condition chance
 		}
 	}
@@ -322,10 +327,54 @@ pm_close_support = {
 	}
 }
 
+# SPECIAL MUNITIONS 
+
+pm_no_extra_special_munition = {
+	texture = "gfx/interface/icons/production_method_icons/no_artillery.dds"
+
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_chemical_munitions = {
+	texture = "gfx/interface/icons/production_method_icons/no_artillery.dds"
+
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+
+	unlocking_technologies = {
+		chemical_warfare
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_artillery_add = 1
+			building_input_oil_add = 1
+		}
+		throughput_scaled = {
+			unit_offense_add = 25
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.25
+			unit_kill_rate_add = 0.35
+			unit_devastation_mult = 1.0
+			unit_provinces_captured_mult = -0.2
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 6
+		}
+	}	
+}
+
 # SPECIAL MODULES TANK
 
 pm_no_extra_special = {
-	texture = "gfx/interface/icons/production_method_icons/no_tanks.dds"
+	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 
 	timed_modifiers = {
 		pm_offense_defense_readjustment
@@ -384,6 +433,7 @@ pm_sloped_armor = {
 		unscaled = { 
 			unit_advancement_speed_mult = -0.1
 			unit_defense_add = 25
+			unit_recovery_rate_add = 0.45
 		}
 	}
 }
@@ -428,8 +478,8 @@ pm_extra_fuel = {
 
 		unscaled = { 
 			unit_offense_add = 15
-			unit_morale_loss_mult = -0.15
-			unit_advancement_speed_mult = -0.1
+			unit_morale_loss_mult = 0.15
+			unit_advancement_speed_mult = 0.05
 			unit_provinces_captured_mult = 0.1
 		}
 	}
