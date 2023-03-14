@@ -1,0 +1,11 @@
+law_disbanded_wmds = {
+
+}
+
+law_chem_bio = {
+	
+}
+
+law_mad = {
+
+}

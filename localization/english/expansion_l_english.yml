@@ -31,7 +31,18 @@ pm_ammunition_storage:0 "Ammunition Storage"
 pm_extra_fuel:0 "Diesel Engines"
 pm_sloped_armor:0 "Sloped Armor"
 
+pmg_special_munition:0 "Special Munitions"
+pm_no_extra_special_munition:0 "No Special Munitions"
+pm_chemical_munitions:0 "Chemical Munitions"
+pm_biohazard_munitions:0 "Biohazardous Munitions"
+
 pm_smgs:0 "Submachine Guns"
+
+pm_motorized_infantry:0 "Motorized Infantry"
+pm_rocket_artillery:0 "Rocket Artillery"
+pm_bio_weapons:0 "Biological Weapon Specialists"
+
+
 
 # Tooltips Exta
 
@@ -55,14 +66,24 @@ fighting_total_war:0 "Fighting a Total War"
 
 light_armor:0 "Blitzkrieg"
 light_armor_desc:0 "If we can overrun and encircle our enemies with the unpredencted speed and firepower of tanks before our enemies can put up resistance, all of Europe will be at our whims."
+
 heavy_armor:0 "Heavy Armor"
+heavy_armor_desc:0 "By increasing the armor and size of our tanks, we can mount bigger caliber munitions and stronger guns to our tanks, creating the ultimate war machine!"
 
 auto_cannons:0 "Autocannons"
+auto_cannons:0 "By using a similar mechanism to machine guns, we can fire large caliber munitions in rapid succession to better shoot down aircraft and pierce armored personnel."
 
 smg_equipment:0 "Submachine Guns"
+smg_equipment_desc:0 "With the right mechanisms, we can equip our men with portable machineguns that are easier to handle when on the move and don't need to be setup on the ground."
+
 motorized_infantry:0 "Mobile Infantry"
+motorized_infantry_desc:0 "By giving our infantry trucks and cars to move around in, our men can get to the frontline and advance into enemey territory faster than any previous method of transportation!"
 
 bio_war:0 "Biological Warfare"
+bio_war_desc:0 "Some diseases and biohazards have no known cures, some we can make in our own labs, we can use that to our advantage to wipe out any resistance in entire regions for months if not years."
+
+rocket_artillery:0 "Rocket Artillery"
+rocket_artillery_desc:0 "By lighting oil and natural gases in a nozzle, we can create a propulsion system that can launch munitions farther and faster with only one truck than we can with dozens of howitzers."
 
 # Events
 total_war_unlock.t:0 "A War to End All War"

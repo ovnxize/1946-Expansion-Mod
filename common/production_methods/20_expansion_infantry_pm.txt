@@ -1,44 +1,43 @@
 # Specialist
 
 pm_bio_weapons = {
-	texture = "gfx/interface/icons/production_method_icons/unused/armored_trains.dds"
+	texture = "gfx/interface/icons/production_method_icons/unused/chemical_artillery.dds"
 
 	unlocking_technologies = {
 		bio_war
 	}
 
+	unlocking_laws = {
+		law_chem_bio
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_ammunition_add = 2
-			building_input_oil_add = 2
-		}
-
-		level_scaled = {
-			building_employment_soldiers_add = 750
-			building_employment_officers_add = 250
-			building_training_rate_add = 15
+			building_input_artillery_add = 1
+			building_input_meat_add = 2
+			building_input_fertilizer_add = 1
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 85
-			unit_defense_add = 85
+			unit_offense_add = 75
 		}
 
 		unscaled = {
 			unit_morale_loss_add = 4
-			unit_provinces_captured_mult = 0.10
-			unit_devastation_mult = 0.15
-			unit_advancement_speed_mult = 0.05
+			unit_provinces_captured_mult = -1
+			unit_devastation_mult = 0.8
+			unit_kill_rate_add = 0.65
+			unit_recovery_rate_add = -0.5
 			# should add Battle Condition chance
 		}
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 10
+			country_army_power_projection_add = 8
 		}
 	}
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 }
 
@@ -56,18 +55,18 @@ pm_smgs = {
 			# input goods
 			building_input_steel_add = 25
 			building_input_hardwood_add = 10
-			building_input_tools_add = 25
+			building_input_tools_add = 30
 			building_input_oil_add = 15
 			
 			# output goods
-			building_output_small_arms_add = 90
+			building_output_small_arms_add = 95
 		}
 
 		level_scaled = {
 			# employment
-			building_employment_laborers_add = 800
-			building_employment_machinists_add = 2200
-			building_employment_engineers_add = 1500
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1000
 		}
 	}
 }
@@ -75,7 +74,42 @@ pm_smgs = {
 # Barracks
 
 pm_rocket_artillery = {
-	texture = "gfx/interface/icons/production_method_icons/siege_artillery.dds"
+	texture = "gfx/interface/icons/production_method_icons/missile.dds"
+
+	unlocking_technologies = {
+		rocket_artillery
+	}
+
+	disallowing_laws = {
+		law_peasant_levies
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_artillery_add = 1
+			building_input_ammunition_add = 2
+			building_input_oil_add = 1
+			building_input_explosives_add = 1
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 50
+			unit_defense_add = 35
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.65
+			unit_kill_rate_add = 0.15
+			unit_devastation_mult = 0.2
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_rocket_artillery_conscription = {
+	texture = "gfx/interface/icons/production_method_icons/missile.dds"
 
 	unlocking_technologies = {
 		rocket_artillery
@@ -86,10 +120,10 @@ pm_rocket_artillery = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_artillery_add = 2
+			building_input_artillery_add = 1
 			building_input_ammunition_add = 2
 			building_input_oil_add = 1
-			building_input_explosives_add = 2
+			building_input_explosives_add = 1
 		}
 
 		throughput_scaled = {
@@ -99,7 +133,7 @@ pm_rocket_artillery = {
 
 		unscaled = {
 			unit_morale_damage_mult = 0.65
-			unit_kill_rate_add = 0.25
+			unit_kill_rate_add = 0.15
 			unit_devastation_mult = 0.2
 		}
 	}
@@ -114,5 +148,82 @@ pm_rocket_artillery = {
 }
 
 pm_motorized_infantry = {
+	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
+	unlocking_technologies = {
+		motorized_infantry
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 2
+			building_input_small_arms_add = 1
+			building_input_radios_add = 1
+			building_input_automobiles_add = 1
+		}
 
+		level_scaled = {
+			building_employment_soldiers_add = 780
+			building_employment_officers_add = 220
+			building_training_rate_add = 40
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 65
+			unit_defense_add = 50
+		}
+		
+		unscaled = {
+			unit_morale_loss_add = 6
+			unit_provinces_captured_mult = 0.25
+			unit_advancement_speed_mult = 0.15
+			unit_provinces_lost_mult = -0.05
+		}		
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 13
+		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
+}
+
+pm_motorized_infantry_conscription = {
+	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
+	unlocking_technologies = {
+		motorized_infantry
+	}
+
+	disallowing_laws = {
+		law_peasant_levies
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 2
+			building_input_small_arms_add = 1
+			building_input_radios_add = 1
+			building_input_automobiles_add = 1
+		}
+
+		level_scaled = {
+			building_employment_soldiers_add = 780
+			building_employment_officers_add = 220
+			building_training_rate_add = 40
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 60
+			unit_defense_add = 45
+		}
+		
+		unscaled = {
+			unit_morale_loss_add = 8
+			unit_provinces_captured_mult = 0.15
+			unit_advancement_speed_mult = 0.10
+		}		
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment
+	}
 }

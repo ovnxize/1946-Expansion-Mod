@@ -333,35 +333,41 @@ pm_no_extra_special_munition = {
 	texture = "gfx/interface/icons/production_method_icons/no_artillery.dds"
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 }
 
 pm_chemical_munitions = {
-	texture = "gfx/interface/icons/production_method_icons/no_artillery.dds"
+	texture = "gfx/interface/icons/production_method_icons/unused/chemical_artillery.dds"
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 
 	unlocking_technologies = {
 		chemical_warfare
 	}
 
+	unlocking_laws = {
+		law_chem_bio
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_artillery_add = 1
+			building_input_ammunition_add = 1
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
-			unit_offense_add = 25
+			unit_offense_add = 30
 		}
 
 		unscaled = {
 			unit_morale_damage_mult = 0.25
 			unit_kill_rate_add = 0.35
-			unit_devastation_mult = 1.0
+			unit_devastation_mult = 0.8
 			unit_provinces_captured_mult = -0.2
+			unit_recovery_rate_add = -0.35
+			unit_morale_loss_mult = -0.15
 		}
 	}
 	country_modifiers = {
@@ -371,13 +377,56 @@ pm_chemical_munitions = {
 	}	
 }
 
+pm_bio_munitions = {
+	texture = "gfx/interface/icons/production_method_icons/chemical_weapons_specialists.dds"
+
+	timed_modifiers = {
+		pm_offense_defense_readjustment_minor
+	}
+
+	unlocking_technologies = {
+		bio_war
+	}
+
+	unlocking_laws = {
+		law_chem_bio
+	}
+
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 1
+			building_input_meat_add = 2
+			building_input_fertilizer_add = 2
+		}
+		throughput_scaled = {
+			unit_offense_add = 50
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.25
+			unit_kill_rate_add = 0.55
+			unit_devastation_mult = 1.0
+			unit_provinces_captured_mult = -0.5
+			unit_recovery_rate_add = -0.45
+			unit_morale_loss_mult = -0.15
+		}
+	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_army_power_projection_add = 6
+		}
+	}	
+
+}
+
 # SPECIAL MODULES TANK
 
 pm_no_extra_special = {
 	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 }
 
@@ -411,7 +460,7 @@ pm_extra_machine_gun = {
 		}
 	}
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 }
 
@@ -423,7 +472,7 @@ pm_sloped_armor = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -446,7 +495,7 @@ pm_ammunition_storage = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -469,7 +518,7 @@ pm_extra_fuel = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 	building_modifiers = {
 		workforce_scaled = {
