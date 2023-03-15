@@ -42,8 +42,6 @@ pm_motorized_infantry:0 "Motorized Infantry"
 pm_rocket_artillery:0 "Rocket Artillery"
 pm_bio_weapons:0 "Biological Weapon Specialists"
 
-
-
 # Tooltips Exta
 
 modifier_state_building_tank_max_level_add:0 "Armored Barracks Max Level"
@@ -86,12 +84,25 @@ rocket_artillery:0 "Rocket Artillery"
 rocket_artillery_desc:0 "By lighting oil and natural gases in a nozzle, we can create a propulsion system that can launch munitions farther and faster with only one truck than we can with dozens of howitzers."
 
 # Events
-total_war_unlock.t:0 "A War to End All War"
-total_war_unlock.d:0 "As the 19th century comes to a close, "
+
+total_war_unlock.t:0 "A New Age of War"
+total_war_unlock.f:0 "As the 19th century comes to a close, our economy, military, and technology have grown to heights never before seen in all of history. Many military theorists in our nation have theorized that as our military and production technologies increase exponentially higher, that wars will be more devastating and more traumatic than any war that has ever been fought. With the stakes so high, with all of the sacrifices that may be required, will the next war between a great power be the last war in history? Only time will tell how this new era will play out."
+total_war_unlock.d:0 " “You may live to see man-made horrors beyond your comprehension.” - Nikola Tesla, 1989"
+total_war_unlock.o:0 "Concerning..."
+total_war_unlocked_tooltip:0 "#I Total Wars#! are now unlocked"
 
 # Laws
 
 law_disarmed_military:0 "Disarmed Military"
 law_disarmed_military_desc:0 "Whether by choice or by force, the military sector has been completely abolished."
+
+# Diplomatic Actions
+
+join_war:0 "Join Great War"
+join_war_action_name:0 "Join Great War"
+
+send_volunteers:0 "Send Volunteer Forces"
+send_volunteers_action_propose_name:0 "Send Volunteer Forces"
+send_volunteers_desc:0 "An [concept_ongoing_diplomatic_action] where a [concept_country] sends a portion of it's military to a country to support a [concept_war] they are in without explicitly declaring a [concept_diplomatic_play] on the enemy [concept_country]."
 
 

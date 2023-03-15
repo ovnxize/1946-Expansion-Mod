@@ -39,3 +39,11 @@ create_geneva_convention = {
 		base = 100
 	}
 }
+
+sign_geneva_convention = {
+
+}
+
+unsign_geneva_convention = {
+	
+}

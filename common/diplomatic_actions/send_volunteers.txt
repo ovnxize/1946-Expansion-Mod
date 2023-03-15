@@ -1,0 +1,79 @@
+send_volunteers = {
+
+	requires_approval = yes
+	
+	unlocking_technologies = {
+		wargaming
+	}
+
+	potential = {
+		NOT = { is_country_type = decentralized }
+		scope:target_country = {
+			NOT = { is_country_type = decentralized }
+		}	
+		is_at_war = no
+	}
+
+	possible = {
+		scope:target_country = {
+			is_at_war = yes
+			NOT = { is_diplomatic_play_enemy_of = ROOT }
+		}
+		custom_tooltip = {
+			text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
+			scope:target_country.relations:root > relations_threshold:poor
+		}
+		custom_tooltip = {
+			text = DIPLO_ACTION_MARKET_CONNECTION_REQUIRED
+			OR = {	
+				AND = {
+					market = { has_port = yes }
+					scope:target_country.market = { has_port = yes }
+				}
+				scope:actor.market = {
+					any_scope_country = {
+						is_adjacent = root
+					}
+				}
+			}
+		}
+		NOT = { has_war_with = scope:target_country }
+		has_diplomatic_relevance = scope:target_country		
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = gets_obligation
+			if = {
+				limit = {
+					root = {
+						owes_obligation_to = scope:target_country			
+					}						
+				}
+					root = { set_owes_obligation_to = { country = scope:target_country setting = no } }
+				}						
+			else_if = {
+				limit = {
+					NOT = { 
+						scope:target_country = {
+							owes_obligation_to = root			
+						}						
+					}
+				}
+					scope:target_country = { set_owes_obligation_to = { country = root setting = yes } } 
+			}	
+		}
+	}
+
+	pact = {
+		cost = 200
+
+		show_in_outliner = yes
+		relations_progress_per_day = 6
+		relations_improvement_max = 100
+	}
+
+	ai = {
+		
+	}
+}
