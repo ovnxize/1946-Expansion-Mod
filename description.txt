@@ -1,21 +1,27 @@
 [img]https://i.imgur.com/MyDOkHx.png[/img]
 
-I've always felt that Victoria 2 ended a bit too early, with only a short amount of time to use tanks and airplanes, and capitulated nations not making a comeback in time for redemption. I feel the same way about Victoria 3. To remedy this problem, I extended the end date to 1946.
+I've always felt that Victoria 2 ended a bit too early, with only a short amount of time to use tanks and airplanes, and capitulated nations not making a comeback in time for redemption. I feel the same way about Victoria 3. To remedy this problem, I extended the end date to 1946, as well as adding things that make the end game in general more interesting.
 
 [h1] Features [/h1]
 [list] 
 [*] New Armored Barracks Building | Change the tide of batle with tanks like the Early WW1 Landships to the formidable Super Heavies
+
+[*] Send Volunteer Forces | Spread the revolution or start proxy wars in other countries that are involved in a war without directly involving yourself!
 [/list]
 
 [h1] Work In Progress [/h1]
 [list]
 [*] 1921-1946 Techs | Research things from Synthetic Fuel to Motorize Infantry or even Weapons of Mass Destruction
+
 [*] Revamped Great Wars | Be able to fully disarm an entire nations military, sign temporary or permanent armistices, and even be able to join in the middle of a war without being involved in the diplomatic play!
+
 [*] ( Experimental) Aeronautics | Take the winds of war to the skies with an entirely new front and war system to fight on!
-[*] Peace and Love | Sign the Geneva Convention to rid the use of Flamethrowers, Chemical, Biological, and Nuclear Weapons, and form the League of Nations to urge the European powers to disarm their military to bring an end to all wars!
-[*] (Experimental) Send Volunteer Forces | Support nations without directly involving yourself in their wars. 
+
+[*] Peace and Love | Sign the Geneva Convention to rid the use of Chemical, Biological, and Nuclear Weapons, and form the League of Nations to urge the European powers to disarm their military to bring an end to all wars!
+
 [*] (Experimental) Military Stockpile | The Military will now rely on a stockpile instead of the actual markets.
-[*] Small Enhancements and Adjustments | Things that make the middle/late game more interesting or accurate.
+
+[*] Small Enhancements and Adjustments | Things that make the middle/late game more interesting or accurate, like a Theater Production Method for Urban Centers, or Airports to have air travel outside of Skyscrapers.
 [/list]
 
 [h1]Links[/h1]

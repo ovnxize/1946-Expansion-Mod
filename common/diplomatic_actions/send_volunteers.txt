@@ -65,11 +65,14 @@ send_volunteers = {
 			}
 		}
 
-		# Gets a suitable place to place Volunteer Building in the target country
+		# Gets a suitable state to place Volunteer Building in the target country
+
 		scope:target_country = {
-				any_scope_state = {
-					has_port = yes
-					controller = scope:target_country
+				every_scope_state = {
+					limit = {
+						has_port = yes
+						controller = scope:target_country
+					}
 					save_scope_as = safe_volunteer_state
 				}
 			}
@@ -165,6 +168,12 @@ send_volunteers = {
 				}
 			}
 
+			else = {
+				set_variable = {
+					name = building_to_build_volunteer
+					value = 0
+				}
+			}
 		}
 
 		# Creates a building in the root country that simulates sending goods to the target country, since for whatever reason paradox never added a way to artificially create buy orders... major BRUH moment
@@ -178,24 +187,18 @@ send_volunteers = {
 
 		}
 
+		# Create the volunteer building in the target country
 		scope:target_country = {
 			if = {
 				limit = {
-					var:building_to_build_volunteer = 1
+					root.var:building_to_build_volunteer = 1
 				}
-				scope:safe_volunteer_state = {
-					create_building = {
-					building = "building_volunteer_motorized_rocket"
-					reserves = 1
-					level = 20
+					scope:safe_volunteer_state = {
+						create_building = {
+						building = "building_volunteer_motorized_rocket"
+						reserves = 1
+						level = 20
 					}
-				}
-			}
-			scope:safe_volunteer_state = {
-				create_building = {
-				building = "building_volunteer_motorized_rocket"
-				reserves = 1
-				level = 20
 				}
 			}
 		}
@@ -209,23 +212,18 @@ send_volunteers = {
 		relations_improvement_max = 100
 
 		break_effect = {
-			while = { # Deletes all Arms Industries
-				limit = {
-					owner = {
-						any_scope_state = {
-							has_building = building:building_volunteer_motorized_rocket
-							count > 0
-							save_temporary_scope_as = volunteer_state_arms
-						}
+			scope:target_country = {
+				every_scope_state = {
+					if = {
+						limit = { has_building = building:building_volunteer_motorized_rocket }
 					}
-				}
-				scope:volunteer_state_arms = {
 					remove_building = building_volunteer_motorized_rocket
 				}
 			}
 		}
-
 	}
 
 	ai = {
 	}
+
+}

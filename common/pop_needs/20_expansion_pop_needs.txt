@@ -1,0 +1,25 @@
+﻿# goods						The good being referenced
+# weight					The base weight that is applied to this good based on market Sell Order share
+# max_weight				The maximum weight that can be applied to this good based on market Sell Order share, only meaningful in relation to weight
+# min_weight				The minimum weight that can be applied to this good based on market Sell Order share, only meaningful in relation to weight
+
+popneed_housing = {
+	default = normal_housing
+
+	entry = {
+		good = normal_housing
+
+		weight = 1
+		max_weight = 4.0
+		min_weight = 0.0
+	}
+
+	entry = {
+		good = luxury_housing
+
+		weight = 1
+		max_weight = 2.0
+		min_weight = 0.0
+	} 
+}
+

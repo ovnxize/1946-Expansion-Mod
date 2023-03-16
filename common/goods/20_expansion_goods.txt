@@ -1,0 +1,21 @@
+﻿normal_housing = {
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	cost = 70
+	category = staple
+	tradeable = no
+	
+	prestige_factor = 3
+	
+	consumption_tax_cost = 1000
+}
+
+luxury_housing = {
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	cost = 60
+	category = luxury
+	tradeable = no
+	
+	prestige_factor = 3
+	
+	consumption_tax_cost = 1000
+}
