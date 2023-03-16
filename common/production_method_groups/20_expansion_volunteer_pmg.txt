@@ -32,7 +32,7 @@ pmg_organization_motorized = {
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_motorized_infantry
+		pm_motorized_volunteer
 	}
 }
 
@@ -52,7 +52,7 @@ pmg_artillery_shrapnel = {
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_shrapnel_artillery
+		pm_shrapnel_volunteer
 	}
 }
 
@@ -61,7 +61,7 @@ pmg_artillery_siege = {
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_siege_artillery
+		pm_siege_volunteer
 	}
 }
 
@@ -70,7 +70,7 @@ pmg_artillery_rocket = {
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_rocket_artillery
+		pm_rocket_volunteer
 	}
 }
 

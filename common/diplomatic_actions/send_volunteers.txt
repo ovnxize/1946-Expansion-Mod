@@ -42,6 +42,7 @@ send_volunteers = {
 	}
 
 	accept_effect = {
+
 		# Gives the target country an obligation to root just so there is a slight negative for the country receiving volunteers. 
 		custom_tooltip = {
 			text = gets_obligation
@@ -66,19 +67,12 @@ send_volunteers = {
 
 		# Gets a suitable place to place Volunteer Building in the target country
 		scope:target_country = {
-			OR = {
 				any_scope_state = {
-					has_building = building:building_port
+					has_port = yes
 					controller = scope:target_country
-					save_temporary_scope_as = safe_volunteer_state
-				}
-				any_scope_state = {
-					is_adjacent = root
-					controller = scope:target_country
-					save_temporary_scope_as = safe_volunteer_state
+					save_scope_as = safe_volunteer_state
 				}
 			}
-		}
 
 		# Gets the tech of the root country to calculate what volunteer building is built in the target country
 
@@ -183,6 +177,28 @@ send_volunteers = {
 			}
 
 		}
+
+		scope:target_country = {
+			if = {
+				limit = {
+					var:building_to_build_volunteer = 1
+				}
+				scope:safe_volunteer_state = {
+					create_building = {
+					building = "building_volunteer_motorized_rocket"
+					reserves = 1
+					level = 20
+					}
+				}
+			}
+			scope:safe_volunteer_state = {
+				create_building = {
+				building = "building_volunteer_motorized_rocket"
+				reserves = 1
+				level = 20
+				}
+			}
+		}
 	}
 
 	pact = {
@@ -197,14 +213,14 @@ send_volunteers = {
 				limit = {
 					owner = {
 						any_scope_state = {
-							has_building = building_arms_industry
+							has_building = building:building_volunteer_motorized_rocket
 							count > 0
-							save_temporary_scope_as = armed_state_arms
+							save_temporary_scope_as = volunteer_state_arms
 						}
 					}
 				}
-				scope:armed_state_arms = {
-					remove_building = building_arms_industry
+				scope:volunteer_state_arms = {
+					remove_building = building_volunteer_motorized_rocket
 				}
 			}
 		}
@@ -212,6 +228,4 @@ send_volunteers = {
 	}
 
 	ai = {
-		value = -10000
 	}
-}

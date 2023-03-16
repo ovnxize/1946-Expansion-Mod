@@ -431,7 +431,7 @@ pm_no_extra_special = {
 }
 
 pm_extra_machine_gun = {
-	texture = "gfx/interface/icons/production_method_icons/unused/machine_gunners_turrent.dds"
+	texture = "gfx/interface/icons/production_method_icons/machine_gunners_turrent.dds"
 
 	disallowing_laws = {
 		law_peasant_levies

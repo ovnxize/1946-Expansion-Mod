@@ -5,7 +5,7 @@ pm_skirmish_volunteer = {
 		level_scaled = {
 			building_employment_soldiers_add = 900
 			building_employment_officers_add = 100
-			building_training_rate_add = 30
+			building_training_rate_add = 1000
 		}
 
 		throughput_scaled = {
@@ -27,7 +27,7 @@ pm_trench_volunteer = {
 		level_scaled = {
 			building_employment_soldiers_add = 850
 			building_employment_officers_add = 150
-			building_training_rate_add = 40
+			building_training_rate_add = 1000
 		}
 
 		throughput_scaled = {
@@ -52,7 +52,7 @@ pm_squad_volunteer = {
 		level_scaled = {
 			building_employment_soldiers_add = 800
 			building_employment_officers_add = 200
-			building_training_rate_add = 40
+			building_training_rate_add = 1000
 		}
 
 		throughput_scaled = {
@@ -64,5 +64,104 @@ pm_squad_volunteer = {
 			unit_morale_loss_add = 6
 			unit_provinces_lost_mult = -0.25
 		}		
+	}
+}
+
+pm_motorized_volunteer = {
+	texture = "gfx/interface/icons/production_method_icons/motorized.dds"
+
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_soldiers_add = 780
+			building_employment_officers_add = 220
+			building_training_rate_add = 1000
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 65
+			unit_defense_add = 50
+		}
+		
+		unscaled = {
+			unit_morale_loss_add = 6
+			unit_provinces_captured_mult = 0.25
+			unit_advancement_speed_mult = 0.15
+			unit_provinces_lost_mult = -0.05
+		}		
+	}
+}
+
+# Artiller Volunteers
+
+pm_mobile_volunteer = {
+	texture = "gfx/interface/icons/production_method_icons/mobile_artillery.dds"
+
+	building_modifiers = {
+
+		throughput_scaled = {
+			unit_offense_add = 15
+			unit_defense_add = 15
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.15
+			unit_kill_rate_add = 0.1
+			unit_provinces_captured_mult = 0.1
+		}
+	}
+}
+
+pm_shrapnel_volunteer = {
+	texture = "gfx/interface/icons/production_method_icons/shrapnel_artillery.dds"
+
+	building_modifiers = {
+
+		throughput_scaled = {
+			unit_offense_add = 30
+			unit_defense_add = 30
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.2
+			unit_kill_rate_add = 0.3
+			unit_devastation_mult = 0.25
+		}
+	}
+}
+
+pm_siege_volunteer = {
+	texture = "gfx/interface/icons/production_method_icons/siege_artillery.dds"
+
+	building_modifiers = {
+
+		throughput_scaled = {
+			unit_offense_add = 40
+			unit_defense_add = 30
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.4
+			unit_kill_rate_add = 0.25
+			unit_devastation_mult = 0.5
+		}
+	}
+}
+
+pm_rocket_artillery = {
+	texture = "gfx/interface/icons/production_method_icons/missile.dds"
+
+	building_modifiers = {
+
+		throughput_scaled = {
+			unit_offense_add = 50
+			unit_defense_add = 35
+		}
+
+		unscaled = {
+			unit_morale_damage_mult = 0.65
+			unit_kill_rate_add = 0.15
+			unit_devastation_mult = 0.2
+		}
 	}
 }

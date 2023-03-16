@@ -8,10 +8,6 @@ building_volunteer_skirmish_mobile = {
 	buildable = no
 	downsizeable = no
 
-	unlocking_technologies = {
-		mobile_armor
-	}
-
 	production_method_groups = {
 		pmg_organization_skirmish
 		pmg_artillery_mobile
@@ -31,13 +27,28 @@ building_volunteer_skirmish_shrapnel = {
 	buildable = no
 	downsizeable = no
 
-	unlocking_technologies = {
-		mobile_armor
-	}
-
 	production_method_groups = {
 		pmg_organization_skirmish
 		pmg_artillery_shrapnel
+		pmg_reconaissance
+		pmg_specialist_companies
+		pmg_medical_aid
+	}
+}
+
+building_volunteer_motorized_rocket = {
+	building_group = bg_military
+	recruits_combat_unit = combat_unit_regular
+	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
+	city_type = city
+
+	expandable = no
+	buildable = no
+	downsizeable = no
+
+	production_method_groups = {
+		pmg_organization_motorized
+		pmg_artillery_rocket
 		pmg_reconaissance
 		pmg_specialist_companies
 		pmg_medical_aid

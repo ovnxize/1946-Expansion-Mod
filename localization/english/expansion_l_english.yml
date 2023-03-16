@@ -34,7 +34,7 @@ pm_sloped_armor:0 "Sloped Armor"
 pmg_special_munition:0 "Special Munitions"
 pm_no_extra_special_munition:0 "No Special Munitions"
 pm_chemical_munitions:0 "Chemical Munitions"
-pm_biohazard_munitions:0 "Biohazardous Munitions"
+pm_bio_munitions:0 "Biohazardous Munitions"
 
 pm_smgs:0 "Submachine Guns"
 
