@@ -1,0 +1,70 @@
+building_volunteer_skirmish_mobile = {
+	building_group = bg_military
+	recruits_combat_unit = combat_unit_regular
+	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
+	city_type = city
+
+	expandable = no
+	buildable = no
+	downsizeable = no
+
+	unlocking_technologies = {
+		mobile_armor
+	}
+
+	production_method_groups = {
+		pmg_organization_skirmish
+		pmg_artillery_mobile
+		pmg_reconaissance
+		pmg_specialist_companies
+		pmg_medical_aid
+	}
+}
+
+building_volunteer_skirmish_shrapnel = {
+	building_group = bg_military
+	recruits_combat_unit = combat_unit_regular
+	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
+	city_type = city
+
+	expandable = no
+	buildable = no
+	downsizeable = no
+
+	unlocking_technologies = {
+		mobile_armor
+	}
+
+	production_method_groups = {
+		pmg_organization_skirmish
+		pmg_artillery_shrapnel
+		pmg_reconaissance
+		pmg_specialist_companies
+		pmg_medical_aid
+	}
+}
+
+# Volunteer Office
+
+building_volunteer_offices = {
+	building_group = bg_military
+	texture = "gfx/interface/icons/building_icons/building_conscription_center.dds"
+	city_type = city
+
+	expandable = no
+	buildable = no
+	downsizeable = no
+	
+	unlocking_technologies = {
+		mobile_armor
+	}
+
+	production_method_groups = {
+		pmg_equipment_skirmish
+		pmg_artillery_shrapnel
+		pmg_reconaissance
+		pmg_specialist_companies
+		pmg_medical_aid
+	}
+
+}

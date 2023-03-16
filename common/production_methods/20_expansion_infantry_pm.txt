@@ -148,7 +148,7 @@ pm_rocket_artillery_conscription = {
 }
 
 pm_motorized_infantry = {
-	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
+	texture = "gfx/interface/icons/production_method_icons/motorized.dds"
 	unlocking_technologies = {
 		motorized_infantry
 	}
@@ -189,7 +189,7 @@ pm_motorized_infantry = {
 }
 
 pm_motorized_infantry_conscription = {
-	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
+	texture = "gfx/interface/icons/production_method_icons/motorized.dds"
 	unlocking_technologies = {
 		motorized_infantry
 	}

@@ -1,3 +1,42 @@
 ﻿synthetic_fuel = {
+		# Unlocks Tanks PM in Vehicles Industries
+	# Unlocks Tanks, Planes and Tanks PM in Barracks
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
+	category = production
 	
+	unlocking_technologies = {	
+		nitrogen_fixation
+	}
+}
+
+synthetic_rubber = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		vulcanization
+		plastics
+	}
+}
+
+television = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		radio
+	}
+}
+
+analog_computers = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		electrical_capacitors
+	}
 }

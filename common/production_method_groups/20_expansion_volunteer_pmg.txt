@@ -1,0 +1,76 @@
+# Infantry Volunteers
+
+pmg_organization_skirmish = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_skirmish_volunteer
+	}
+}
+
+pmg_organization_trench = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_trench_volunteer
+	}
+}
+
+pmg_organization_squad = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_squad_volunteer
+	}
+}
+
+pmg_organization_motorized = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_motorized_infantry
+	}
+}
+
+# Artillery Volunteers
+
+pmg_artillery_mobile = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_mobile_artillery
+	}
+}
+
+pmg_artillery_shrapnel = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_shrapnel_artillery
+	}
+}
+
+pmg_artillery_siege = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_siege_artillery
+	}
+}
+
+pmg_artillery_rocket = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_rocket_artillery
+	}
+}
+

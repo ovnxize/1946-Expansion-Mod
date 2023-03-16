@@ -39,8 +39,17 @@ pm_biohazard_munitions:0 "Biohazardous Munitions"
 pm_smgs:0 "Submachine Guns"
 
 pm_motorized_infantry:0 "Motorized Infantry"
+pm_motorized_infantry_conscription:0 "Motorized Infantry"
 pm_rocket_artillery:0 "Rocket Artillery"
+pm_rocket_artillery_conscription:0 "Rocket Artillery"
 pm_bio_weapons:0 "Biological Weapon Specialists"
+
+# Volunteer Localization
+
+pmg_organization_skirmish:0 "Organization"
+pmg_organization_trench:0 "Organization"
+pmg_organization_squad:0 "Organization"
+pmg_organization_motorized:0 "Organization"
 
 # Tooltips Exta
 
@@ -101,8 +110,16 @@ law_disarmed_military_desc:0 "Whether by choice or by force, the military sector
 join_war:0 "Join Great War"
 join_war_action_name:0 "Join Great War"
 
-send_volunteers:0 "Send Volunteer Forces"
+send_volunteers:0 "Send Volunteers"
 send_volunteers_action_propose_name:0 "Send Volunteer Forces"
-send_volunteers_desc:0 "An [concept_ongoing_diplomatic_action] where a [concept_country] sends a portion of it's military to a country to support a [concept_war] they are in without explicitly declaring a [concept_diplomatic_play] on the enemy [concept_country]."
+send_volunteers_desc:0 "An [concept_ongoing_diplomatic_action] where a [concept_country] sends a portion of its military to another [concept_country] that is at [concept_war] in exchange for an [concept_obligation]."
+send_volunteers_action_break_name:0 "Recall Volunteers"
+send_volunteers_accepted_name:0 ""
 
+send_volunteers_proposal_notification_name:0 "Proposal to Send Volunteers"
+send_volunteers_proposal_notification_desc:0 "[INITIATOR_COUNTRY.GetName] wishes to [concept_volunteers] from their country to help in the ongoning war."
+send_volunteers_proposal_notification_effects_desc:0 "$send_volunteers_desc$"
 
+# Game Concepts
+
+concept_volunteers:0 "Send Volunteers"

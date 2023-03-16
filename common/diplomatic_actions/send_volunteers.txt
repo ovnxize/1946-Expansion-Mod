@@ -3,7 +3,7 @@ send_volunteers = {
 	requires_approval = yes
 	
 	unlocking_technologies = {
-		wargaming
+		logistics
 	}
 
 	potential = {
@@ -41,27 +41,147 @@ send_volunteers = {
 		has_diplomatic_relevance = scope:target_country		
 	}
 
-	effect = {
+	accept_effect = {
+		# Gives the target country an obligation to root just so there is a slight negative for the country receiving volunteers. 
 		custom_tooltip = {
 			text = gets_obligation
+			scope:target_country = { set_owes_obligation_to = { country = root setting = yes } }
 			if = {
 				limit = {
 					root = {
 						owes_obligation_to = scope:target_country			
-					}						
+					}			
 				}
-					root = { set_owes_obligation_to = { country = scope:target_country setting = no } }
-				}						
+				root = { set_owes_obligation_to = { country = scope:target_country setting = no } }
+			}		
 			else_if = {
 				limit = {
-					NOT = { 
-						scope:target_country = {
-							owes_obligation_to = root			
-						}						
-					}
+					scope:target_country = {
+						NOT = { owes_obligation_to = root }					
+					}			
 				}
-					scope:target_country = { set_owes_obligation_to = { country = root setting = yes } } 
-			}	
+				scope:target_country = { set_owes_obligation_to = { country = root setting = yes } }
+			}
+		}
+
+		# Gets a suitable place to place Volunteer Building in the target country
+		scope:target_country = {
+			OR = {
+				any_scope_state = {
+					has_building = building:building_port
+					controller = scope:target_country
+					save_temporary_scope_as = safe_volunteer_state
+				}
+				any_scope_state = {
+					is_adjacent = root
+					controller = scope:target_country
+					save_temporary_scope_as = safe_volunteer_state
+				}
+			}
+		}
+
+		# Gets the tech of the root country to calculate what volunteer building is built in the target country
+
+		root = {
+			if = {
+				limit = {
+					has_technology_researched = motorized_infantry
+					has_technology_researched = rocket_artillery
+				}
+				set_variable = {
+					name = building_to_build_volunteer
+					value = 1
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_technology_researched = motorized_infantry
+					has_technology_researched = wargaming
+				}
+				set_variable = {
+					name = building_to_build_volunteer
+					value = 2
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_technology_researched = nco_training
+					has_technology_researched = wargaming
+				}
+				set_variable = {
+					name = building_to_build_volunteer
+					value = 3
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_technology_researched = nco_training
+					has_technology_researched = breech_loading_artillery
+				}
+				set_variable = {
+					name = building_to_build_volunteer
+					value = 4
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_technology_researched = trench_works
+					has_technology_researched = wargaming
+				}
+				set_variable = {
+					name = building_to_build_volunteer
+					value = 5
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_technology_researched = trench_works
+					has_technology_researched = breech_loading_artillery
+				}
+				set_variable = {
+					name = building_to_build_volunteer
+					value = 6
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_technology_researched = general_staff
+					has_technology_researched = breech_loading_artillery
+				}
+				set_variable = {
+					name = building_to_build_volunteer
+					value = 7
+				}
+			}
+
+			else_if = {
+				limit = {
+					has_technology_researched = general_staff
+					has_technology_researched = napoleonic_warfare
+				}
+				set_variable = {
+					name = building_to_build_volunteer
+					value = 8
+				}
+			}
+
+		}
+
+		# Creates a building in the root country that simulates sending goods to the target country, since for whatever reason paradox never added a way to artificially create buy orders... major BRUH moment
+
+		root = {
+			if = {
+				limit = {
+					var:building_to_build_volunteer = 1
+				}
+			}
+
 		}
 	}
 
@@ -71,9 +191,27 @@ send_volunteers = {
 		show_in_outliner = yes
 		relations_progress_per_day = 6
 		relations_improvement_max = 100
+
+		break_effect = {
+			while = { # Deletes all Arms Industries
+				limit = {
+					owner = {
+						any_scope_state = {
+							has_building = building_arms_industry
+							count > 0
+							save_temporary_scope_as = armed_state_arms
+						}
+					}
+				}
+				scope:armed_state_arms = {
+					remove_building = building_arms_industry
+				}
+			}
+		}
+
 	}
 
 	ai = {
-		
+		value = -10000
 	}
 }

@@ -10,6 +10,7 @@ total_war_unlock = {
 		trigger = {
 			game_date >= 1890.01.01
 			days = 0
+			NOT = { total_war_unlock_var = true }
 		}
 	}
 
@@ -28,6 +29,10 @@ total_war_unlock = {
 		effect = {
 			custom_tooltip = {
 				text = total_war_unlocked_tooltip
+				set_variable = {
+					name = total_war_unlock_var 
+					value = true
+				}
 			}
 		}
 	}

@@ -1,0 +1,68 @@
+pm_skirmish_volunteer = {
+	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 900
+			building_employment_officers_add = 100
+			building_training_rate_add = 30
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 30
+			unit_defense_add = 35
+		}
+
+		unscaled = {
+			unit_morale_loss_add = 10
+		}
+	}
+}
+
+pm_trench_volunteer = {
+	texture = "gfx/interface/icons/production_method_icons/trench_infantry.dds"
+
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_soldiers_add = 850
+			building_employment_officers_add = 150
+			building_training_rate_add = 40
+		}
+
+		throughput_scaled = {
+			
+			unit_offense_add = 40
+			unit_defense_add = 60
+		}
+
+		unscaled = {
+			unit_morale_loss_add = 8
+			unit_provinces_captured_mult = -0.25
+			unit_provinces_lost_mult = -0.25
+		}
+	}
+}
+
+pm_squad_volunteer = {
+	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_soldiers_add = 800
+			building_employment_officers_add = 200
+			building_training_rate_add = 40
+		}
+
+		throughput_scaled = {
+			unit_offense_add = 55
+			unit_defense_add = 65
+		}
+		
+		unscaled = {
+			unit_morale_loss_add = 6
+			unit_provinces_lost_mult = -0.25
+		}		
+	}
+}
