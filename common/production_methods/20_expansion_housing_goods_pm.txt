@@ -1,0 +1,35 @@
+pm_subsistence_housing = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { # 85
+			building_input_fabric_add = 0.2
+			building_input_wood_add = 0.8
+			building_output_normal_housing_add = 0.35
+		}
+	}
+}
+
+pm_agricultural_housing = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { # 85
+			building_input_fabric_add = 0.3
+			building_input_wood_add = 1
+			building_output_normal_housing_add = 0.5
+		}
+	}
+}
+
+pm_hovels = {
+	texture = "gfx/interface/icons/production_method_icons/subsistence_farming.dds"
+	
+	building_modifiers = {
+		workforce_scaled = { # 85
+			building_input_fabric_add = 0.8
+			building_input_wood_add = 1.8 
+			building_output_normal_housing_add = 1.35
+		}
+	}
+}

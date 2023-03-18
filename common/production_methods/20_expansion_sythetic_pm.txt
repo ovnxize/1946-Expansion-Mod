@@ -1,0 +1,45 @@
+pm_synthetic_rubber_production = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+
+	pollution_generation = 5
+		
+	unlocking_technologies = {
+		synthetic_rubber
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_coal_add = 20
+			building_output_rubber_add = 30
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 2500
+		}
+	}
+}
+
+pm_synthetic_oil_production = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+
+	pollution_generation = 5
+		
+	unlocking_technologies = {
+		synthetic_rubber
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_coal_add = 40
+			building_output_oil_add = 50
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 2500
+		}
+	}
+}

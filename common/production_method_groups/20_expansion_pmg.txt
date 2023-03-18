@@ -147,3 +147,54 @@ pmg_artillery_conscription = {
 	}
 }
 
+# Urban Center Rework
+
+pmg_urban_housing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_profitable
+
+	production_methods = {
+		pm_hovels
+		pm_tenement_housing
+		pm_town_houses
+		pm_apartment_complexes
+	}
+}
+
+pmg_urban_entertainment = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_profitable
+
+	production_methods = {
+		pm_no_entertainment
+		pm_circuses
+		pm_exhibitions
+		pm_stadiums
+		pm_theaters
+	}
+}
+
+# Subsistence Building Rework
+
+pmg_housing_building_subsistence = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive 
+
+	production_methods = {
+		pm_subsistence_housing
+	}
+}
+
+# Tooling Factory Rework
+
+pmg_base_building_tooling_workshops = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_profitable
+
+	production_methods = {
+		pm_crude_tools
+		pm_pig_iron
+		pm_steel
+		pm_power_tools
+	}
+}

@@ -1,11 +1,12 @@
+# Infantry Volunteers
+
 pm_skirmish_volunteer = {
 	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
 
 	building_modifiers = {
 		level_scaled = {
-			building_employment_soldiers_add = 900
-			building_employment_officers_add = 100
-			building_training_rate_add = 1000
+			building_employment_soldiers_add = 1000
+			building_training_rate_add = 20000
 		}
 
 		throughput_scaled = {
@@ -25,9 +26,8 @@ pm_trench_volunteer = {
 	building_modifiers = {
 
 		level_scaled = {
-			building_employment_soldiers_add = 850
-			building_employment_officers_add = 150
-			building_training_rate_add = 1000
+			building_employment_soldiers_add = 1000
+			building_training_rate_add = 20000
 		}
 
 		throughput_scaled = {
@@ -50,9 +50,8 @@ pm_squad_volunteer = {
 	building_modifiers = {
 
 		level_scaled = {
-			building_employment_soldiers_add = 800
-			building_employment_officers_add = 200
-			building_training_rate_add = 1000
+			building_employment_soldiers_add = 1000
+			building_training_rate_add = 20000
 		}
 
 		throughput_scaled = {
@@ -73,9 +72,8 @@ pm_motorized_volunteer = {
 	building_modifiers = {
 
 		level_scaled = {
-			building_employment_soldiers_add = 780
-			building_employment_officers_add = 220
-			building_training_rate_add = 1000
+			building_employment_soldiers_add = 1000
+			building_training_rate_add = 20000
 		}
 
 		throughput_scaled = {
@@ -148,7 +146,7 @@ pm_siege_volunteer = {
 	}
 }
 
-pm_rocket_artillery = {
+pm_rocket_volunteer = {
 	texture = "gfx/interface/icons/production_method_icons/missile.dds"
 
 	building_modifiers = {
@@ -162,6 +160,120 @@ pm_rocket_artillery = {
 			unit_morale_damage_mult = 0.65
 			unit_kill_rate_add = 0.15
 			unit_devastation_mult = 0.2
+		}
+	}
+}
+
+# PMS for Sending Goods to Volunteers
+
+	# Infantry
+
+pm_volunteer_send_skirmish = {
+	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 1
+			building_input_small_arms_add = 1
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 125
+			building_employment_bureaucrats_add = 125
+
+		}
+	}
+}
+
+pm_volunteer_send_trench = {
+	texture = "gfx/interface/icons/production_method_icons/trench_infantry.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 2
+			building_input_small_arms_add = 1
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 125
+			building_employment_bureaucrats_add = 125
+
+		}
+	}
+}
+
+pm_volunteer_send_squad = {
+	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_ammunition_add = 2
+			building_input_small_arms_add = 1
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = 125
+			building_employment_bureaucrats_add = 125
+
+		}
+	}
+}
+
+pm_volunteer_send_motorized = {
+	texture = "gfx/interface/icons/production_method_icons/motorized.dds"
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_clerks_add = 125
+			building_employment_bureaucrats_add = 125
+			building_input_ammunition_add = 2
+			building_input_small_arms_add = 1
+			building_input_radios_add = 1
+			building_input_automobiles_add = 1
+		}
+	}
+}
+
+	# Artillery
+
+pm_volunteer_send_mobile_artillery = {
+	texture = "gfx/interface/icons/production_method_icons/mobile_artillery.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_artillery_add = 1
+		}
+	}
+}
+
+pm_volunteer_send_shrapnel_artillery = {
+	texture = "gfx/interface/icons/production_method_icons/shrapnel_artillery.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_artillery_add = 1
+			building_input_ammunition_add = 1
+		}
+	}
+}
+
+pm_volunteer_send_siege_artillery = {
+	texture = "gfx/interface/icons/production_method_icons/siege_artillery.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_artillery_add = 2
+			building_input_ammunition_add = 2
+		}
+	}
+}
+
+pm_volunteer_send_rocket_artillery = {
+	texture = "gfx/interface/icons/production_method_icons/missile.dds"
+
+	building_modifiers = {
+		level_scaled = {
+			building_input_artillery_add = 1
+			building_input_ammunition_add = 2
+			building_input_oil_add = 1
+			building_input_explosives_add = 1
 		}
 	}
 }

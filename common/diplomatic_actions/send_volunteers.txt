@@ -10,19 +10,8 @@ send_volunteers = {
 		NOT = { is_country_type = decentralized }
 		scope:target_country = {
 			NOT = { is_country_type = decentralized }
-		}	
-		is_at_war = no
-	}
+		}
 
-	possible = {
-		scope:target_country = {
-			is_at_war = yes
-			NOT = { is_diplomatic_play_enemy_of = ROOT }
-		}
-		custom_tooltip = {
-			text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
-			scope:target_country.relations:root > relations_threshold:poor
-		}
 		custom_tooltip = {
 			text = DIPLO_ACTION_MARKET_CONNECTION_REQUIRED
 			OR = {	
@@ -37,31 +26,64 @@ send_volunteers = {
 				}
 			}
 		}
+
+		is_at_war = no
+	}
+
+	possible = {
+		scope:target_country = {
+			is_at_war = yes
+			NOT = { is_diplomatic_play_enemy_of = ROOT }
+		}
+		custom_tooltip = {
+			text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
+			scope:target_country.relations:root > relations_threshold:poor
+		}
 		NOT = { has_war_with = scope:target_country }
 		has_diplomatic_relevance = scope:target_country		
+		has_technology_researched = napoleonic_warfare
+		has_technology_researched = general_staff
+		custom_tooltip = {
+			text = not_sending_volunteers
+			NOT = {
+				any_country = {
+					has_diplomatic_pact = {
+						who = root
+						type = send_volunteers
+					}
+				}
+			}
+		}
 	}
 
 	accept_effect = {
 
-		# Gives the target country an obligation to root just so there is a slight negative for the country receiving volunteers. 
-		custom_tooltip = {
-			text = gets_obligation
-			scope:target_country = { set_owes_obligation_to = { country = root setting = yes } }
+		scope:target_country = {
+			set_variable = {
+				name = building_to_build_volunteer
+				value = 0
+			}
+		}	
+	
+		root = {
+			set_variable = {
+				name = is_sending_volunteers
+				value = 1
+			}
+		}
+
+		any_scope_country = { # Sends a notification to the relevant countries that this country is sending volunteers
 			if = {
 				limit = {
-					root = {
-						owes_obligation_to = scope:target_country			
-					}			
+					has_overlapping_interests = scope:target_country
 				}
-				root = { set_owes_obligation_to = { country = scope:target_country setting = no } }
-			}		
+				post_notification = country_sends_volunteers
+			}
 			else_if = {
 				limit = {
-					scope:target_country = {
-						NOT = { owes_obligation_to = root }					
-					}			
+					has_overlapping_interests = root
 				}
-				scope:target_country = { set_owes_obligation_to = { country = root setting = yes } }
+				post_notification = country_sends_volunteers
 			}
 		}
 
@@ -69,11 +91,20 @@ send_volunteers = {
 
 		scope:target_country = {
 				every_scope_state = {
-					limit = {
-						has_port = yes
-						controller = scope:target_country
+					if = {
+						limit = {
+							has_port = yes
+							controller = scope:target_country
+						}
+						save_scope_as = safe_volunteer_state
 					}
-					save_scope_as = safe_volunteer_state
+					else_if = {
+						limit = {
+							is_capital = yes
+							controller = scope:target_country
+						}
+						save_scope_as = safe_volunteer_state
+					}
 				}
 			}
 
@@ -183,8 +214,156 @@ send_volunteers = {
 				limit = {
 					var:building_to_build_volunteer = 1
 				}
+				every_scope_state = {
+					if = {
+						limit = {
+							is_capital = yes
+						}
+						save_scope_as = volunteer_office_state
+						create_building = {
+							building = "building_office_motorized_rocket"
+							reserves = 1
+							level = 5
+						}
+					}
+				}
 			}
 
+			else_if = {
+				limit = {
+					var:building_to_build_volunteer = 2
+				}
+				every_scope_state = {
+					if = {
+						limit = {
+							is_capital = yes
+						}
+						save_scope_as = volunteer_office_state
+						create_building = {
+							building = "building_office_motorized_siege"
+							reserves = 1
+							level = 5
+						}
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					var:building_to_build_volunteer = 3
+				}
+				every_scope_state = {
+					if = {
+						limit = {
+							is_capital = yes
+						}
+						save_scope_as = volunteer_office_state
+						create_building = {
+							building = "building_office_squad_siege"
+							reserves = 1
+							level = 5
+						}
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					var:building_to_build_volunteer = 4
+				}
+				every_scope_state = {
+					if = {
+						limit = {
+							is_capital = yes
+						}
+						save_scope_as = volunteer_office_state
+						create_building = {
+							building = "building_office_squad_breech"
+							reserves = 1
+							level = 5
+						}
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					var:building_to_build_volunteer = 5
+				}
+				every_scope_state = {
+					if = {
+						limit = {
+							is_capital = yes
+						}
+						save_scope_as = volunteer_office_state
+						create_building = {
+							building = "building_office_trench_siege"
+							reserves = 1
+							level = 5
+						}
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					var:building_to_build_volunteer = 6
+				}
+				every_scope_state = {
+					if = {
+						limit = {
+							is_capital = yes
+						}
+						save_scope_as = volunteer_office_state
+						create_building = {
+							building = "building_office_trench_breech"
+							reserves = 1
+							level = 5
+						}
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					var:building_to_build_volunteer = 7
+				}
+				every_scope_state = {
+					if = {
+						limit = {
+							is_capital = yes
+						}
+						save_scope_as = volunteer_office_state
+						create_building = {
+							building = "building_office_skirmish_shrapnel"
+							reserves = 1
+							level = 5
+						}
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					var:building_to_build_volunteer = 8
+				}
+				every_scope_state = {
+					if = {
+						limit = {
+							is_capital = yes
+						}
+						save_scope_as = volunteer_office_state
+						create_building = {
+							building = "building_office_skirmish_mobile"
+							reserves = 1
+							level = 5
+						}
+					}
+				}
+			}
+			else = {
+
+			}
 		}
 
 		# Create the volunteer building in the target country
@@ -197,33 +376,287 @@ send_volunteers = {
 						create_building = {
 						building = "building_volunteer_motorized_rocket"
 						reserves = 1
-						level = 20
+						level = 5
 					}
 				}
+			}
+
+			else_if = {
+				limit = {
+					root.var:building_to_build_volunteer = 2
+				}
+				scope:safe_volunteer_state = {
+					create_building = {
+					building = "building_volunteer_motorized_siege"
+					reserves = 1
+					level = 5
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					root.var:building_to_build_volunteer = 3
+				}
+				scope:safe_volunteer_state = {
+					create_building = {
+					building = "building_volunteer_squad_siege"
+					reserves = 1
+					level = 5
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					root.var:building_to_build_volunteer = 4
+				}
+				scope:safe_volunteer_state = {
+					create_building = {
+					building = "building_volunteer_squad_breech"
+					reserves = 1
+					level = 5
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					root.var:building_to_build_volunteer = 5
+				}
+				scope:safe_volunteer_state = {
+					create_building = {
+					building = "building_volunteer_trench_siege"
+					reserves = 1
+					level = 5
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					root.var:building_to_build_volunteer = 6
+				}
+				scope:safe_volunteer_state = {
+					create_building = {
+					building = "building_volunteer_trench_breech"
+					reserves = 1
+					level = 5
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					root.var:building_to_build_volunteer = 7
+				}
+				scope:safe_volunteer_state = {
+					create_building = {
+					building = "building_volunteer_skirmish_shrapnel"
+					reserves = 1
+					level = 5
+					}
+				}
+			}
+
+			else_if = {
+				limit = {
+					root.var:building_to_build_volunteer = 8
+				}
+				scope:safe_volunteer_state = {
+					create_building = {
+					building = "building_volunteer_skirmish_mobile"
+					reserves = 1
+					level = 5
+					}
+				}
+			}
+			
+			else = {
+				set_variable = {
+					name = cancel_send_volunteers
+					value = 1
+				}
+			}
+
+		}
+
+		root = { # Gets Primary Culture of Root
+			random_scope_culture = {
+				limit = { 
+					is_primary_culture_of = ROOT 
+				}
+				save_scope_as = country_majority_culture
+			}
+		}
+
+		scope:safe_volunteer_state = {
+			create_pop = {
+				pop_type = soldiers
+				culture = yankee
+				size = 5000
 			}
 		}
 	}
 
 	pact = {
-		cost = 200
+		cost = 400
 
 		show_in_outliner = yes
-		relations_progress_per_day = 6
-		relations_improvement_max = 100
+		relations_progress_per_day = 4
+		relations_improvement_max = 80
 
-		break_effect = {
+		weekly_effect = { # Chance to get an Obligation
+			custom_tooltip = {
+				text = bankroll_weekly_obligation_effect
+				if = {
+					limit = {
+						root = {
+							owes_obligation_to = scope:target_country			
+						}						
+					}
+					random_list = { 
+						980 = {}
+						10 = { root = { set_owes_obligation_to = { country = scope:target_country setting = no } } }
+					}				
+				}		
+				else_if = {
+					limit = {
+						NOT = { 
+							scope:target_country = {
+								owes_obligation_to = root			
+							}						
+						}
+					}
+					random_list = { 
+						980 = {}
+						10 = { scope:target_country = { set_owes_obligation_to = { country = root setting = yes } } }
+					}
+				}				
+			}
+
+			hidden_effect = { # Test to see if the building has any input shortage goods
+				if = {
+					limit = {
+						scope:volunteer_office_state = {
+							any_scope_building = {
+								is_building_group = bg_volunteer_building
+								building_has_goods_shortage = yes
+							}
+						}
+					}
+					set_variable = {
+						name = out_of_supplies
+						value = 1
+					}
+				}
+				else = {
+					set_variable = {
+						name = out_of_supplies
+						value = 0
+					}
+				}
+			}
+		}
+
+		should_auto_break = {
+			OR = {
+				scope:target_country = {
+					is_at_war = no
+				}
+				var:out_of_supplies = 1
+			}
+		}
+
+		break_effect = { 
+
 			scope:target_country = {
 				every_scope_state = {
 					if = {
-						limit = { has_building = building:building_volunteer_motorized_rocket }
+						limit = { has_building = "building_volunteer_motorized_rocket" }
+						remove_building = building_volunteer_motorized_rocket
 					}
-					remove_building = building_volunteer_motorized_rocket
+					else_if = {
+						limit = { has_building = "building_volunteer_motorized_siege" }
+						remove_building = building_volunteer_motorized_siege
+					}
+					else_if = {
+						limit = { has_building = "building_volunteer_squad_siege" }
+						remove_building = building_volunteer_squad_siege
+					}
+					else_if = {
+						limit = { has_building = "building_volunteer_squad_breech" }
+						remove_building = building_volunteer_squad_breech
+					}
+					else_if = {
+						limit = { has_building = "building_volunteer_trench_siege" }
+						remove_building = building_volunteer_trench_siege
+					}
+					else_if = {
+						limit = { has_building = "building_volunteer_trench_breech" }
+						remove_building = building_volunteer_trench_breech
+					}
+					else_if = {
+						limit = { has_building = "building_volunteer_skirmish_shrapnel" }
+						remove_building = building_volunteer_skirmish_shrapnel
+					}
+					else_if = {
+						limit = { has_building = "building_volunteer_skirmish_mobile" }
+						remove_building = building_volunteer_skirmish_mobile
+					}
+				}
+			}
+
+			root = { 
+				every_scope_state = {
+					if = {
+						limit = { has_building = "building_office_motorized_rocket" }
+						remove_building = building_office_motorized_rocket
+					}
+					else_if = {
+						limit = { has_building = "building_office_motorized_siege" }
+						remove_building = building_office_motorized_siege
+					}
+					else_if = {
+						limit = { has_building = "building_office_squad_siege" }
+						remove_building = building_office_squad_siege
+					}
+					else_if = {
+						limit = { has_building = "building_office_squad_breech" }
+						remove_building = building_office_squad_breech
+					}
+					else_if = {
+						limit = { has_building = "building_office_trench_siege" }
+						remove_building = building_office_trench_siege
+					}
+					else_if = {
+						limit = { has_building = "building_office_trench_breech" }
+						remove_building = building_office_trench_breech
+					}
+					else_if = {
+						limit = { has_building = "building_office_skirmish_shrapnel" }
+						remove_building = building_office_skirmish_shrapnel
+					}
+					else_if = {
+						limit = { has_building = "building_office_skirmish_mobile" }
+						remove_building = building_office_skirmish_mobile
+					}
+				}
+			}
+			
+			root = {
+				set_variable = {
+					name = is_sending_volunteers
+					value = 0
 				}
 			}
 		}
 	}
 
 	ai = {
+		propose_score = {
+			value = -1000
+		}	
 	}
 
 }

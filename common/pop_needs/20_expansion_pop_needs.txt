@@ -7,19 +7,71 @@ popneed_housing = {
 	default = normal_housing
 
 	entry = {
-		good = normal_housing
+		goods = normal_housing
 
-		weight = 1
-		max_weight = 4.0
+		weight = 0.5
+		max_weight = 1.0
 		min_weight = 0.0
 	}
 
 	entry = {
-		good = luxury_housing
+		goods = luxury_housing
 
 		weight = 1
 		max_weight = 2.0
 		min_weight = 0.0
+	} 
+}
+
+popneed_luxury_items = {
+	default = luxury_clothes
+	
+	entry = {
+		goods = luxury_clothes
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.25
+	}
+	
+	entry = {
+		goods = luxury_furniture
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.25
+	}
+	
+	entry = {
+		goods = porcelain
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.25
+	}
+	
+	entry = {
+		goods = radios
+		
+		weight = 1
+		max_weight = 2.0 # Maxes out at 40% of supply share
+		min_weight = 0.0
+	}
+
+	entry = {
+		goods = luxury_housing
+
+		weight = 1
+		max_weight = 2.0
+		min_weight = 0.0
+	} 
+
+	entry = {
+		goods = television
+
+		weight = 1
+		max_weight = 2.0
+		min_weight = 0.25
 	} 
 }
 

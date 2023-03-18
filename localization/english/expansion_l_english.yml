@@ -4,6 +4,7 @@
 
 building_tank:0 "Armored Barracks"
 building_barracks:0 "Infantry Barracks"
+building_suburban_center:0 "Suburban Districts"
 
 # Production Methods
 
@@ -111,7 +112,7 @@ join_war:0 "Join Great War"
 join_war_action_name:0 "Join Great War"
 
 send_volunteers:0 "Send Volunteers"
-send_volunteers_action_propose_name:0 "Send Volunteer Forces"
+send_volunteers_action_propose_name:0 "Send [concept_volunteers]"
 send_volunteers_desc:0 "An [concept_ongoing_diplomatic_action] where a [concept_country] sends a portion of its military to another [concept_country] that is at [concept_war] in exchange for an [concept_obligation]."
 send_volunteers_action_break_name:0 "Recall Volunteers"
 send_volunteers_accepted_name:0 ""
@@ -122,4 +123,84 @@ send_volunteers_proposal_notification_effects_desc:0 "$send_volunteers_desc$"
 
 # Game Concepts
 
-concept_volunteers:0 "Send Volunteers"
+concept_volunteers:0 "Volunteer Forces"
+concept_volunteers_desc:0 "Volunteers are a special battalion unit who are sent by a foreign [concept_country] to aid in a war the [concept_country] they sent them to are in, without having them be directly involved in the war. For the Sender, they will have a [concept_building] that will send the neccesary supplies to the target [concept_country]."
+
+# Volunteers Building and Stuff 
+
+building_volunteer_skirmish_mobile:0 "Volunteer Camp"
+building_volunteer_skirmish_shrapnel:0 "Volunteer Camp"
+building_volunteer_trench_breech:0 "Volunteer Camp"
+building_volunteer_trench_siege:0 "Volunteer Camp"
+building_volunteer_squad_breech:0 "Volunteer Camp"
+building_volunteer_squad_siege:0 "Volunteer Camp"
+building_volunteer_motorized_siege:0 "Volunteer Camp"
+building_volunteer_motorized_rocket:0 "Volunteer Camp"
+
+pmg_organization_skirmish:0 "Organization"
+pmg_organization_trench:0 "Organization"
+pmg_organization_squad:0 "Organization"
+pmg_organization_motorized:0 "Organization"
+
+pmg_consume_skirmish:0 "Organization"
+pmg_consume_trench:0 "Organization"
+pmg_consume_squad:0 "Organization"
+pmg_consume_motorized:0 "Organization"
+
+pmg_artillery_mobile:0 "Artillery"
+pmg_artillery_shrapnel:0 "Artillery"
+pmg_artillery_siege:0 "Artillery"
+pmg_artillery_rocket:0 "Artillery"
+
+pmg_consume_mobile:0 "Artillery"
+pmg_consume_shrapnel:0 "Artillery"
+pmg_consume_siege:0 "Artillery"
+pmg_consume_rocket:0 "Artillery"
+
+pm_skirmish_volunteer:0 "Skirmish Infantry"
+pm_trench_volunteer:0 "Trench Infantry"
+pm_squad_volunteer:0 "Squad Infantry"
+pm_motorized_volunteer:0 "Motorized Infantry"
+
+pm_mobile_volunteer:0 "Mobile Artillery"
+pm_shrapnel_volunteer:0 "Shrapnel Artillery"
+pm_siege_volunteer:0 "Siege Artillery"
+pm_rocket_volunteer:0 "Rocket Artillery"
+
+pm_volunteer_send_skirmish:0 "Skirmish Volunteers"
+pm_volunteer_send_trench:0 "Trench Volunteers"
+pm_volunteer_send_squad:0 "Squad Volunteers"
+pm_volunteer_send_motorized:0 "Motorized Volunteers"
+
+pm_volunteer_send_mobile_artillery:0 "Mobile Artillery"
+pm_volunteer_send_shrapnel_artillery:0 "Shrapnel Artillery"
+pm_volunteer_send_siege_artillery:0 "Siege Artillery"
+pm_volunteer_send_rocket_artillery:0 "Rocket Artillery"
+
+building_office_skirmish_mobile:0 "Volunteer Office"
+building_office_skirmish_shrapnel:0 "Volunteer Office"
+building_office_trench_shrapnel:0 "Volunteer Office"
+building_office_trench_siege:0 "Volunteer Office"
+building_office_squad_shrapnel:0 "Volunteer Office"
+building_office_squad_siege:0 "Volunteer Office"
+building_office_motorized_siege:0 "Volunteer Office"
+building_office_motorized_rocket:0 "Volunteer Office"
+
+
+# Notifications 
+
+notification_country_sends_volunteers:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] has received Volunteers"
+notification_country_sends_volunteers_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]. has sent Volunteers to [SCOPE.sCountry('target_country').GetName]!"
+
+send_volunteers_proposal_accepted_name:0 "We are now sending volunteers to [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]!"
+
+
+# Goods 
+
+normal_housing:0 "Housing"
+modifier_building_output_normal_housing_add:0 "@normal_housing! Housing output per level"
+
+luxury_housing:0 "Luxury Housing"
+
+
+popneed_housing:0 "Housing"
