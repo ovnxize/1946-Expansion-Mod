@@ -5,7 +5,7 @@
 	progressiveness = -500
 
 	modifier = {
-		hidden = {
+		hidden_effect = {
 			state_building_barracks_max_level_add = 0
 			state_building_tank_max_level_add = 0
 			state_building_conscription_center_max_level_add = 5
@@ -66,8 +66,23 @@
 				remove_building = building_war_machine_industry
 			}
 		}
-	}
 
+		while = { # Deletes all Barracks
+				limit = {
+					owner = {
+						any_scope_state = {
+							has_building = "building_barracks"
+							count > 0
+							save_temporary_scope_as = armed_state_barracks
+						}
+					}	
+				}
+			scope:armed_state_machines = {
+				remove_building = building_barracks
+			}
+		}
+	}
+	
 	ai_will_do = {
 		always = no
 	}

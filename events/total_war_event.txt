@@ -9,6 +9,8 @@ total_war_unlock = {
 	on_yearly_pulse = {
 		trigger = {
 			game_date >= 1890.01.01
+			days = 0
+			NOT = { total_war_unlock_var = true }
 		}
 	}
 
@@ -19,11 +21,19 @@ total_war_unlock = {
 	on_created_soundeffect = "event:/SFX/Events/unspecific/military_parade"
 	on_opened_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
+	duration = 3
+
 	option = {
 		name = total_war_unlock.o
 		highlighted_option = yes
-		custom_tooltip = {
-			text = total_war_unlocked_tooltip
+		effect = {
+			custom_tooltip = {
+				text = total_war_unlocked_tooltip
+				set_variable = {
+					name = total_war_unlock_var 
+					value = true
+				}
+			}
 		}
 	}
 }
@@ -44,5 +54,14 @@ total_war_begin = {
 	option = {
 		name = total_war_begin.0
 		highlighted_option = yes
+
+		create_incident = {
+			value = 15
+			country = root
+		}
+
+		add_modifier = {
+			name = fighting_total_war 
+		}
 	}
 }

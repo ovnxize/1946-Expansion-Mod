@@ -4,8 +4,10 @@
 
 building_tank:0 "Armored Barracks"
 building_barracks:0 "Infantry Barracks"
+building_suburban_center:0 "Suburban Districts"
+building_entertainment:0 "Entertainment Industries"
 
-# Production Methods
+# Production Methods Military
 
 pmg_tank:0 "Chasis"
 pm_landships:0 "Landship"
@@ -34,15 +36,64 @@ pm_sloped_armor:0 "Sloped Armor"
 pmg_special_munition:0 "Special Munitions"
 pm_no_extra_special_munition:0 "No Special Munitions"
 pm_chemical_munitions:0 "Chemical Munitions"
-pm_biohazard_munitions:0 "Biohazardous Munitions"
+pm_bio_munitions:0 "Biohazardous Munitions"
 
 pm_smgs:0 "Submachine Guns"
 
 pm_motorized_infantry:0 "Motorized Infantry"
+pm_motorized_infantry_conscription:0 "Motorized Infantry"
 pm_rocket_artillery:0 "Rocket Artillery"
+pm_rocket_artillery_conscription:0 "Rocket Artillery"
 pm_bio_weapons:0 "Biological Weapon Specialists"
 
+# Production Methods Industry
 
+pm_tvs:0 "Televisions"
+
+pmg_synthetic_dyes:0 "Main Synthetics"
+pmg_synthetic_silk:0 "Secondary Synthetics"
+pm_synthetic_oil_production:0 "Synthetic Oil"
+pm_synthetic_rubber_production:0 "Synthetic Rubber"
+
+pmg_electrics_secondary_category:0 "Secondary Electronics"
+
+# Production Methods Housing  
+
+pmg_urban_housing:0 "Urban Housing"
+pm_hovels:0 "Hovels"
+pm_tenement_housing:0 "Tenements"
+pm_town_houses:0 "Town Houses"
+pm_apartment_complexes:0 "Apartment Complexes"
+pm_agricultural_housing_basic:0 "Farm Houses and Cottages"
+pm_agricultural_housing_upgraded:0 "Estates and Farm Houses"
+pm_subsistence_housing:0 "Cottages"
+pmg_housing_building_subsistence:0 "Housing"
+pmg_housing_building_farms:0 "Housing"
+pmg_electrics_secondary_category:0 "Additional Electronics"
+
+pmg_ownership_capital_building_entertainment:0 "Ownership"
+pmg_entertainment_type:0 "Base"
+
+pmg_sports_type:0 "Theater Acts"
+
+pm_fairs:0 "Fairs and Circuses"
+pm_art_exhibition:0 "Art Exhbits"
+pm_theater_house:0 "Theater Halls"
+pm_sports_stadium:0 "Sports Stadium"
+pm_movie_theater:0 "Movie Theaters"
+
+pm_no_theaters:0 "No Theater Acts"
+pm_plays:0 "Plays and Opera"
+pm_concerts:0 "Softball"
+pm_movies:0 "Movies"
+pm_cycling:0 "Cycling"
+
+# Volunteer Localization
+
+pmg_organization_skirmish:0 "Organization"
+pmg_organization_trench:0 "Organization"
+pmg_organization_squad:0 "Organization"
+pmg_organization_motorized:0 "Organization"
 
 # Tooltips Exta
 
@@ -62,7 +113,7 @@ total_war_declared_tooltip:0 "[COUNTRY.GetNameNoFlag] has not already declared #
 
 fighting_total_war:0 "Fighting a Total War"
 
-# Technology
+# Technology Military
 
 light_armor:0 "Blitzkrieg"
 light_armor_desc:0 "If we can overrun and encircle our enemies with the unpredencted speed and firepower of tanks before our enemies can put up resistance, all of Europe will be at our whims."
@@ -85,13 +136,133 @@ bio_war_desc:0 "Some diseases and biohazards have no known cures, some we can ma
 rocket_artillery:0 "Rocket Artillery"
 rocket_artillery_desc:0 "By lighting oil and natural gases in a nozzle, we can create a propulsion system that can launch munitions farther and faster with only one truck than we can with dozens of howitzers."
 
+# Technology Production
+
+synthetic_rubber:0 "Synthetic Rubber"
+synthetic_fuel:0 "Synthetic Oils"
+
 # Events
-total_war_unlock.t:0 "A War to End All War"
-total_war_unlock.d:0 "As the 19th century comes to a close, "
+
+total_war_unlock.t:0 "A New Age of War"
+total_war_unlock.f:0 "As the 19th century comes to a close, our economy, military, and technology have grown to heights never before seen in all of history. Many military theorists in our nation have theorized that as our military and production technologies increase exponentially higher, that wars will be more devastating and more traumatic than any war that has ever been fought. With the stakes so high, with all of the sacrifices that may be required, will the next war between a great power be the last war in history? Only time will tell how this new era will play out."
+total_war_unlock.d:0 " “You may live to see man-made horrors beyond your comprehension.” - Nikola Tesla, 1989"
+total_war_unlock.o:0 "Concerning..."
+total_war_unlocked_tooltip:0 "#I Total Wars#! are now unlocked"
 
 # Laws
 
 law_disarmed_military:0 "Disarmed Military"
 law_disarmed_military_desc:0 "Whether by choice or by force, the military sector has been completely abolished."
 
+# Diplomatic Actions
 
+join_war:0 "Join Great War"
+join_war_action_name:0 "Join Great War"
+
+send_volunteers:0 "Send Volunteers"
+send_volunteers_action_propose_name:0 "Send [concept_volunteers]"
+send_volunteers_desc:0 "An [concept_ongoing_diplomatic_action] where a [concept_country] sends a portion of its military to another [concept_country] that is at [concept_war] in exchange for an [concept_obligation]."
+send_volunteers_action_break_name:0 "Recall Volunteers"
+send_volunteers_accepted_name:0 ""
+
+send_volunteers_proposal_notification_name:0 "Proposal to Send Volunteers"
+send_volunteers_proposal_notification_desc:0 "[INITIATOR_COUNTRY.GetName] wishes to [concept_volunteers] from their country to help in the ongoning war."
+send_volunteers_proposal_notification_effects_desc:0 "$send_volunteers_desc$"
+
+# Game Concepts
+
+concept_volunteers:0 "Volunteer Forces"
+concept_volunteers_desc:0 "Volunteers are a special battalion unit who are sent by a foreign [concept_country] to aid in a war the [concept_country] they sent them to are in, without having them be directly involved in the war. For the Sender, they will have a [concept_building] that will send the neccesary supplies to the target [concept_country]."
+
+# Volunteers Building and Stuff 
+
+building_volunteer_skirmish_mobile:0 "Volunteer Camp"
+building_volunteer_skirmish_shrapnel:0 "Volunteer Camp"
+building_volunteer_trench_breech:0 "Volunteer Camp"
+building_volunteer_trench_siege:0 "Volunteer Camp"
+building_volunteer_squad_breech:0 "Volunteer Camp"
+building_volunteer_squad_siege:0 "Volunteer Camp"
+building_volunteer_motorized_siege:0 "Volunteer Camp"
+building_volunteer_motorized_rocket:0 "Volunteer Camp"
+
+pmg_organization_skirmish:0 "Organization"
+pmg_organization_trench:0 "Organization"
+pmg_organization_squad:0 "Organization"
+pmg_organization_motorized:0 "Organization"
+
+pmg_consume_skirmish:0 "Organization"
+pmg_consume_trench:0 "Organization"
+pmg_consume_squad:0 "Organization"
+pmg_consume_motorized:0 "Organization"
+
+pmg_artillery_mobile:0 "Artillery"
+pmg_artillery_shrapnel:0 "Artillery"
+pmg_artillery_siege:0 "Artillery"
+pmg_artillery_rocket:0 "Artillery"
+
+pmg_consume_mobile:0 "Artillery"
+pmg_consume_shrapnel:0 "Artillery"
+pmg_consume_siege:0 "Artillery"
+pmg_consume_rocket:0 "Artillery"
+
+pm_skirmish_volunteer:0 "Skirmish Infantry"
+pm_trench_volunteer:0 "Trench Infantry"
+pm_squad_volunteer:0 "Squad Infantry"
+pm_motorized_volunteer:0 "Motorized Infantry"
+
+pm_mobile_volunteer:0 "Mobile Artillery"
+pm_shrapnel_volunteer:0 "Shrapnel Artillery"
+pm_siege_volunteer:0 "Siege Artillery"
+pm_rocket_volunteer:0 "Rocket Artillery"
+
+pm_volunteer_send_skirmish:0 "Skirmish Volunteers"
+pm_volunteer_send_trench:0 "Trench Volunteers"
+pm_volunteer_send_squad:0 "Squad Volunteers"
+pm_volunteer_send_motorized:0 "Motorized Volunteers"
+
+pm_volunteer_send_mobile_artillery:0 "Mobile Artillery"
+pm_volunteer_send_shrapnel_artillery:0 "Shrapnel Artillery"
+pm_volunteer_send_siege_artillery:0 "Siege Artillery"
+pm_volunteer_send_rocket_artillery:0 "Rocket Artillery"
+
+building_office_skirmish_mobile:0 "Volunteer Office"
+building_office_skirmish_shrapnel:0 "Volunteer Office"
+building_office_trench_shrapnel:0 "Volunteer Office"
+building_office_trench_siege:0 "Volunteer Office"
+building_office_squad_shrapnel:0 "Volunteer Office"
+building_office_squad_siege:0 "Volunteer Office"
+building_office_motorized_siege:0 "Volunteer Office"
+building_office_motorized_rocket:0 "Volunteer Office"
+
+
+# Notifications 
+
+notification_country_sends_volunteers:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] has received Volunteers"
+notification_country_sends_volunteers_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]. has sent Volunteers to [SCOPE.sCountry('target_country').GetName]!"
+
+send_volunteers_proposal_accepted_name:0 "We are now sending volunteers to [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]!"
+
+
+# Goods 
+
+normal_housing:0 "Housing"
+modifier_building_output_normal_housing_add:0 "@normal_housing! Housing output per level"
+
+luxury_housing:0 "Luxury Housing"
+
+popneed_housing:0 "Housing"
+
+television:0 "Televisions"
+
+entertainment:0 "Entertainment"
+
+literature:0 "Literature"
+
+film:0 "Film"
+
+# Pop Types
+
+entertainer:0 "Entertainer"
+entertainer_no_icon:0 "Entertainer"
+entertainer_desc:0 "Entertainers are a group of people who perform for a living. Athletes, Actors, Muscians, Stuntmen, and much more, all fall under the entertainer category. The political view of Entertainers is incredibly varied and don't favor one side."
+entertainer_only_icon:0 "@entertainer!"

@@ -1,0 +1,121 @@
+# Base
+
+pm_fairs = {
+	texture = "gfx/interface/icons/production_method_icons/unused/base1.dds"
+	building_modifiers = {
+		workforce_scaled = { # 85
+			building_input_services_add = 10
+			building_output_entertainment_add = 25
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1600
+			building_employment_entertainer_add = 600
+			building_employment_clerks_add = 800
+		}
+	}
+}
+
+pm_art_exhibition = {
+	texture = "gfx/interface/icons/production_method_icons/unused/base2.dds"
+	building_modifiers = {
+		workforce_scaled = { # 85
+			building_input_fine_art_add = 5
+			building_output_entertainment_add = 55 
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1200
+			building_employment_academics_add = 400
+			building_employment_clerks_add = 1200
+		}
+	}
+}
+
+pm_theater_house = {
+	texture = "gfx/interface/icons/production_method_icons/unused/base3.dds"
+
+	building_modifiers = {
+		workforce_scaled = { # 85
+			building_output_entertainment_add = 10
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_academics_add = 50
+			building_employment_entertainer_add = 750
+			building_employment_clerks_add = 1000
+		}
+	}
+}
+
+pm_sports_stadium = {
+	texture = "gfx/interface/icons/production_method_icons/unused/base4.dds"
+
+	unlocking_technologies = {
+		organized_sports
+	}
+}
+
+pm_movie_theater = {
+	texture = "gfx/interface/icons/production_method_icons/unused/base5.dds"
+
+	unlocking_technologies = {
+		film
+	}
+}
+
+# Sport Types
+
+pm_no_theaters = {
+	texture = "gfx/interface/icons/production_method_icons/no_explosives.dds"
+
+	unlocking_production_methods = {
+		pm_fairs
+		pm_art_exhibition
+		pm_sports_stadium
+	}
+}
+
+pm_plays = {
+	texture = "gfx/interface/icons/production_method_icons/unused/refining1.dds"
+
+	unlocking_production_methods = {
+		pm_theater_house
+	}
+	
+	building_modifiers = {
+		workforce_scaled = { # 85
+		building_input_literature_add = 15
+			building_output_entertainment_add = 20
+		}
+	}
+}
+
+pm_concerts = {
+	texture = "gfx/interface/icons/production_method_icons/unused/refining2.dds"
+
+	unlocking_production_methods = {
+		pm_theater_house
+	}
+
+}
+
+pm_movies = {
+	texture = "gfx/interface/icons/production_method_icons/unused/refining2.dds"
+
+	unlocking_production_methods = {
+		pm_theater_house
+	}
+
+	unlocking_technologies = {
+		film
+	}
+
+	building_modifiers = {
+		workforce_scaled = { # 85
+		building_input_film_add = 20
+			building_output_entertainment_add = 40
+		}
+	}
+}

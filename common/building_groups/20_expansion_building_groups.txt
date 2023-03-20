@@ -1,0 +1,33 @@
+bg_volunteer_building = {
+	category = urban
+
+	always_possible = yes
+	
+	is_government_funded = yes
+	
+	economy_of_scale = yes
+	
+	lens = government
+	
+	urbanization = 0
+	infrastructure_usage_per_level = 1
+	
+	economy_of_scale_ai_factor = 2.0
+}
+
+bg_suburban = {
+	category = urban
+
+	always_possible = yes
+
+	can_use_slaves = no
+	
+	economy_of_scale = yes
+	
+	lens = light_industry
+	
+	urbanization = 0
+	infrastructure_usage_per_level = 2
+	
+	economy_of_scale_ai_factor = 2.0
+}

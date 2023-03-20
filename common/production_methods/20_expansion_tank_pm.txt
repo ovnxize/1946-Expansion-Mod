@@ -431,7 +431,7 @@ pm_no_extra_special = {
 }
 
 pm_extra_machine_gun = {
-	texture = "gfx/interface/icons/production_method_icons/unused/handcranked_machine_guns.dds"
+	texture = "gfx/interface/icons/production_method_icons/machine_gunners_turrent.dds"
 
 	disallowing_laws = {
 		law_peasant_levies
@@ -511,7 +511,7 @@ pm_ammunition_storage = {
 }
 
 pm_extra_fuel = {
-	texture = "gfx/interface/icons/production_method_icons/tanker_cars.dds"
+	texture = "gfx/interface/icons/production_method_icons/mechanized_looms.dds"
 
 	unlocking_technologies = {
 		heavy_armor
