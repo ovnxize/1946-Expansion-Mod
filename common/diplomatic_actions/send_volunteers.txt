@@ -54,6 +54,7 @@ send_volunteers = {
 				}
 			}
 		}
+		is_player = yes
 	}
 
 	accept_effect = {
