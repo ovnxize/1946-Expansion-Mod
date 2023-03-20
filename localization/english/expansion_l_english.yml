@@ -95,6 +95,7 @@ pmg_organization_trench:0 "Organization"
 pmg_organization_squad:0 "Organization"
 pmg_organization_motorized:0 "Organization"
 
+
 # Tooltips Exta
 
 modifier_state_building_tank_max_level_add:0 "Armored Barracks Max Level"
@@ -102,6 +103,8 @@ modifier_state_building_tank_max_level_add_desc:0 "A bonus or penalty to the max
 modifier_state_building_arms_industry_level_add:0 "Arms Industry Max Level"
 troop_name_armored:0 "Armored"
 combat_unit_tank:0 "Armored"
+
+not_sending_volunteers:0 "You are already sending volunteers!"
 
 # Decisions 
 
