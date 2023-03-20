@@ -9,18 +9,42 @@ popneed_housing = {
 	entry = {
 		goods = normal_housing
 
-		weight = 0.5
-		max_weight = 1.0
-		min_weight = 0.0
+		weight = 1 
+		max_weight = 3.0
+		min_weight = 0.25
 	}
+}
+
+popneed_luxury_housing = {
 
 	entry = {
 		goods = luxury_housing
 
 		weight = 1
 		max_weight = 2.0
-		min_weight = 0.0
+		min_weight = 0.25
 	} 
+
+}
+
+popneed_entertainment = {
+	default = entertainment
+
+	entry = {
+		goods = entertainment
+
+		weight = 1
+		max_weight = 4.0
+		min_weight = 0
+	}
+
+	entry = {
+		goods = literature
+
+		weight = 0.5
+		max_weight = 2.0
+		min_weight = 0.0
+	}
 }
 
 popneed_luxury_items = {
@@ -59,19 +83,11 @@ popneed_luxury_items = {
 	}
 
 	entry = {
-		goods = luxury_housing
-
-		weight = 1
-		max_weight = 2.0
-		min_weight = 0.0
-	} 
-
-	entry = {
 		goods = television
 
 		weight = 1
 		max_weight = 2.0
-		min_weight = 0.25
+		min_weight = 0.0
 	} 
 }
 

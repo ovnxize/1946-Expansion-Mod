@@ -32,3 +32,39 @@ building_output_television_add = {
 	good = yes
 	percent = no
 }
+
+building_input_services_add = {
+	good = yes
+	percent = no
+}
+
+building_input_fine_art_add = {
+	good = yes
+	percent = no
+}
+
+building_input_literature_add = {
+	good = yes
+	percent = no
+}
+
+building_output_literature_add = {
+	good = yes
+	percent = no
+}
+
+building_input_film_add = {
+	good = yes
+	percent = no
+}
+
+building_output_film_add = {
+	good = yes
+	percent = no
+}
+
+building_employment_entertainer_add = {
+	good = yes
+	percent = no
+}
+

@@ -21,10 +21,11 @@ I've always felt that Victoria 2 ended a bit too early, with only a short amount
 
 [*] (Experimental) Military Stockpile | The Military will now rely on a stockpile instead of the actual markets.
 
-[*] Small Enhancements and Adjustments | Things that make the middle/late game more interesting or accurate, like a Theater Production Method for Urban Centers, or Airports to have air travel outside of Skyscrapers.
+[*] Small Enhancements and Adjustments | Things that make the middle/late game more interesting or accurate, like a Entertainment Industries, or Airports to have air travel outside of Skyscrapers.
 [/list]
 
 [h1]Links[/h1]
 
 [url=https://www.buymeacoffee.com/droem][img]https://i.imgur.com/8JQALD8.png[/img][/url]
+[url=https://discord.gg/RTuBURX8Xv][img]https://i.imgur.com/kldQVYb.png[/img][/url]
 [url=https://github.com/ovnxize/1946-Expansion-Mod]Github[/url]

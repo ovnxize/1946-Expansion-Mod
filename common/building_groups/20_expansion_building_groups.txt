@@ -16,7 +16,7 @@ bg_volunteer_building = {
 }
 
 bg_suburban = {
-	category = development
+	category = urban
 
 	always_possible = yes
 

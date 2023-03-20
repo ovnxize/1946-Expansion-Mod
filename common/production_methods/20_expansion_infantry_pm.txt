@@ -7,9 +7,9 @@ pm_bio_weapons = {
 		bio_war
 	}
 
-	unlocking_laws = {
-		law_chem_bio
-	}
+	#unlocking_laws = {
+	#	law_chem_bio
+	#}
 
 	building_modifiers = {
 		workforce_scaled = {

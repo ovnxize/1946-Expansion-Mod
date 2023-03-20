@@ -5,8 +5,9 @@
 building_tank:0 "Armored Barracks"
 building_barracks:0 "Infantry Barracks"
 building_suburban_center:0 "Suburban Districts"
+building_entertainment:0 "Entertainment Industries"
 
-# Production Methods
+# Production Methods Military
 
 pmg_tank:0 "Chasis"
 pm_landships:0 "Landship"
@@ -45,6 +46,48 @@ pm_rocket_artillery:0 "Rocket Artillery"
 pm_rocket_artillery_conscription:0 "Rocket Artillery"
 pm_bio_weapons:0 "Biological Weapon Specialists"
 
+# Production Methods Industry
+
+pm_tvs:0 "Televisions"
+
+pmg_synthetic_dyes:0 "Main Synthetics"
+pmg_synthetic_silk:0 "Secondary Synthetics"
+pm_synthetic_oil_production:0 "Synthetic Oil"
+pm_synthetic_rubber_production:0 "Synthetic Rubber"
+
+pmg_electrics_secondary_category:0 "Secondary Electronics"
+
+# Production Methods Housing  
+
+pmg_urban_housing:0 "Urban Housing"
+pm_hovels:0 "Hovels"
+pm_tenement_housing:0 "Tenements"
+pm_town_houses:0 "Town Houses"
+pm_apartment_complexes:0 "Apartment Complexes"
+pm_agricultural_housing_basic:0 "Farm Houses and Cottages"
+pm_agricultural_housing_upgraded:0 "Estates and Farm Houses"
+pm_subsistence_housing:0 "Cottages"
+pmg_housing_building_subsistence:0 "Housing"
+pmg_housing_building_farms:0 "Housing"
+pmg_electrics_secondary_category:0 "Additional Electronics"
+
+pmg_ownership_capital_building_entertainment:0 "Ownership"
+pmg_entertainment_type:0 "Base"
+
+pmg_sports_type:0 "Theater Acts"
+
+pm_fairs:0 "Fairs and Circuses"
+pm_art_exhibition:0 "Art Exhbits"
+pm_theater_house:0 "Theater Halls"
+pm_sports_stadium:0 "Sports Stadium"
+pm_movie_theater:0 "Movie Theaters"
+
+pm_no_theaters:0 "No Theater Acts"
+pm_plays:0 "Plays and Opera"
+pm_concerts:0 "Softball"
+pm_movies:0 "Movies"
+pm_cycling:0 "Cycling"
+
 # Volunteer Localization
 
 pmg_organization_skirmish:0 "Organization"
@@ -70,7 +113,7 @@ total_war_declared_tooltip:0 "[COUNTRY.GetNameNoFlag] has not already declared #
 
 fighting_total_war:0 "Fighting a Total War"
 
-# Technology
+# Technology Military
 
 light_armor:0 "Blitzkrieg"
 light_armor_desc:0 "If we can overrun and encircle our enemies with the unpredencted speed and firepower of tanks before our enemies can put up resistance, all of Europe will be at our whims."
@@ -92,6 +135,11 @@ bio_war_desc:0 "Some diseases and biohazards have no known cures, some we can ma
 
 rocket_artillery:0 "Rocket Artillery"
 rocket_artillery_desc:0 "By lighting oil and natural gases in a nozzle, we can create a propulsion system that can launch munitions farther and faster with only one truck than we can with dozens of howitzers."
+
+# Technology Production
+
+synthetic_rubber:0 "Synthetic Rubber"
+synthetic_fuel:0 "Synthetic Oils"
 
 # Events
 
@@ -202,5 +250,19 @@ modifier_building_output_normal_housing_add:0 "@normal_housing! Housing output p
 
 luxury_housing:0 "Luxury Housing"
 
-
 popneed_housing:0 "Housing"
+
+television:0 "Televisions"
+
+entertainment:0 "Entertainment"
+
+literature:0 "Literature"
+
+film:0 "Film"
+
+# Pop Types
+
+entertainer:0 "Entertainer"
+entertainer_no_icon:0 "Entertainer"
+entertainer_desc:0 "Entertainers are a group of people who perform for a living. Athletes, Actors, Muscians, Stuntmen, and much more, all fall under the entertainer category. The political view of Entertainers is incredibly varied and don't favor one side."
+entertainer_only_icon:0 "@entertainer!"
