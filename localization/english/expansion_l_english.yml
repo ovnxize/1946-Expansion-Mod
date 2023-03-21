@@ -69,7 +69,8 @@ pm_agricultural_housing_upgraded:0 "Estates and Farm Houses"
 pm_subsistence_housing:0 "Cottages"
 pmg_housing_building_subsistence:0 "Housing"
 pmg_housing_building_farms:0 "Housing"
-pmg_electrics_secondary_category:0 "Additional Electronics"
+
+# Production Methods Entertainment
 
 pmg_ownership_capital_building_entertainment:0 "Ownership"
 pmg_entertainment_type:0 "Base"
@@ -87,6 +88,12 @@ pm_plays:0 "Plays and Opera"
 pm_concerts:0 "Softball"
 pm_movies:0 "Movies"
 pm_cycling:0 "Cycling"
+
+# Production Methods Art Academy Rework
+
+pmg_secondary_building_arts_academy:0 "Additional Art"
+pm_romanticist_literature:0 "Romanticist Literature"
+pm_naturalist_literature:0 "Naturalist Literature"
 
 # Volunteer Localization
 

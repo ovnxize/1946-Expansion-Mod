@@ -452,3 +452,27 @@ building_war_machine_industry = {
 		
 		terrain_manipulator = farmland_millet
 	}
+
+	# Arts Academy Rework
+
+	building_arts_academy = {
+		building_group = bg_arts
+	
+		city_type = city
+		
+		levels_per_mesh = 5
+	
+		unlocking_technologies = {
+			romanticism
+		}
+	
+		production_method_groups = {
+			pmg_base_building_arts_academy
+			pmg_secondary_building_arts_academy
+			pmg_ownership_building_arts_academy
+		}
+		
+		texture = "gfx/interface/icons/building_icons/building_arts_academy.dds"
+	
+		required_construction = construction_cost_high
+	}

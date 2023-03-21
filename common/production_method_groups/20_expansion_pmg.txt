@@ -263,14 +263,14 @@ pmg_synthetic_silk = {
 
 # Arts Academy Rework 
 
-pmg_base_building_arts_academy = {
-	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+pmg_secondary_building_arts_academy = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
 	ai_selection = most_productive
 
 	production_methods = {
-		pm_traditional_art
-		pm_realist_art
-		pm_photographic_art
-		pm_film_art
+		pm_romanticist_literature
+		pm_naturalist_literature
+		#pm_orchestral_music
+		#pm_big_band_music
 	}
 }

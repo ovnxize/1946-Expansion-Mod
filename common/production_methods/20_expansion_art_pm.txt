@@ -46,3 +46,25 @@ pm_film_art = {
 		}					
 	}
 }
+
+pm_romanticist_literature = {
+	texture = "gfx/interface/icons/production_method_icons/unused/refining1.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_paper_add = 1 # 75
+			building_output_literature_add = 10
+		}
+	}
+}
+
+pm_naturalist_literature = {
+	texture = "gfx/interface/icons/production_method_icons/unused/refining2.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_paper_add = 1.5 # 75
+			building_output_literature_add = 15
+		}
+	}
+}
