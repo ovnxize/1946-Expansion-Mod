@@ -12,7 +12,6 @@ bg_volunteer_building = {
 	urbanization = 0
 	infrastructure_usage_per_level = 1
 	
-	economy_of_scale_ai_factor = 2.0
 }
 
 bg_suburban = {
