@@ -6,7 +6,7 @@
 	category = production
 	
 	unlocking_technologies = {	
-		nitrogen_fixation
+		aniline
 	}
 
 	ai_weight = {
@@ -45,7 +45,7 @@ television = {
 
 analog_computers = {
 	era = era_6
-	texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
+	texture = "gfx/interface/icons/event_icons/event_industry.dds"
 	category = production
 	
 	unlocking_technologies = {	
@@ -72,6 +72,68 @@ power_tools = {
 	unlocking_technologies = {	
 		electrical_capacitors
 		pneumatic_tools
+	}
+
+	modifier = {
+		building_coal_mine_throughput_mult = 0.10
+		building_iron_mine_throughput_mult = 0.10
+		building_lead_mine_throughput_mult = 0.10
+		building_sulfur_mine_throughput_mult = 0.10
+		building_gold_mine_throughput_mult = 0.10
+		building_war_machine_industry_throughput_mult = 0.05
+		building_furniture_manufacturies_throughput_mult = 0.05
+		building_war_machine_industry_throughput_mult = 0.05
+		building_motor_industry_throughput_mult = 0.05
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
+}
+
+fracking = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
+	category = production
+
+	unlocking_technologies = {
+		pumpjacks
+	}
+
+	modifier = { 
+		building_oil_rig_throughput_mult = 0.20
+	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
+}
+
+atomic_theory = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/unused/invention_placeholder.dds"
+	category = production
+
+	ai_weight = {
+		value = 1 # Important tech in general
+	}
+}
+
+chemical_pesticides = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/nitroglycerin.dds"
+	category = production
+
+	unlocking_technologies = {
+		nitrogen_fixation
+	}
+
+	modifier = {
+		building_rye_farm_throughput_mult = 0.05 
+		building_wheat_farm_throughput_mult = 0.05
+		building_rice_farm_throughput_mult = 0.05
+		building_maize_farm_throughput_mult = 0.05
+		building_millet_farm_throughput_mult = 0.05
 	}
 
 	ai_weight = {

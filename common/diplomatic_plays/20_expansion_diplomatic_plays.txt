@@ -1,0 +1,39 @@
+dp_contain_threat = {
+	requires_interest_marker = no
+	initiator_can_add_war_goals = no
+	target_can_add_war_goals = yes
+	
+	war_goal = contain_threat
+	
+	texture = "gfx/interface/icons/war_goals/contain_threat.dds"
+	
+	possible = {
+		NOT = { is_country_type = decentralized }
+		aggressive_diplomatic_plays_permitted = yes
+		NOT = { is_subject_of = scope:target_country }
+		scope:target_country = {
+			NOT = { is_country_type = decentralized }
+			NOT = { is_subject_of = root }
+		}	
+		custom_tooltip = {
+			text = DIPLO_PLAY_GREAT_POWER_TRIGGER
+			country_rank >= rank_value:great_power
+		}	
+		custom_tooltip = {
+			text = DIPLO_PLAY_OUTRAGED_TRIGGER
+			"scope:target_country.infamy" >= infamy_threshold:pariah
+		}
+	}
+
+	additional_involvement_trigger = {
+		NOT = { is_country_type = decentralized }
+		country_rank >= rank_value:great_power
+		aggressive_diplomatic_plays_permitted = yes
+	}
+	
+	on_weekly_pulse = {}
+
+	on_war_begins = {}
+
+	on_war_end = {}
+}

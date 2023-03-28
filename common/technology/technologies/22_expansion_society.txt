@@ -1,3 +1,15 @@
-﻿occultism = {
-	
+﻿eugenics = {
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
+	category = society
+}
+
+airports = {
+	era = era_6
+	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
+	category = society
+
+	unlocking_technologies = {
+		paved_roads
+	}
 }

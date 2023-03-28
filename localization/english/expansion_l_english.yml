@@ -57,6 +57,8 @@ pm_synthetic_rubber_production:0 "Synthetic Rubber"
 
 pmg_electrics_secondary_category:0 "Secondary Electronics"
 
+pm_power_tools:0 "Power Tools"
+
 # Production Methods Housing  
 
 pmg_urban_housing:0 "Urban Housing"
@@ -150,6 +152,8 @@ rocket_artillery_desc:0 "By lighting oil and natural gases in a nozzle, we can c
 
 synthetic_rubber:0 "Synthetic Rubber"
 synthetic_fuel:0 "Synthetic Oils"
+power_tools:0 "Power Tools"
+analgo_computers:0 "Analog Computers"
 
 # Events
 
@@ -276,3 +280,8 @@ entertainer:0 "Entertainer"
 entertainer_no_icon:0 "Entertainer"
 entertainer_desc:0 "Entertainers are a group of people who perform for a living. Athletes, Actors, Muscians, Stuntmen, and much more, all fall under the entertainer category. The political view of Entertainers is incredibly varied and don't favor one side."
 entertainer_only_icon:0 "@entertainer!"
+
+# National Socialist Parties
+
+party_nazis:0 "German Workers Party"
+ilminist:0 "Liberal Ilminist Party"

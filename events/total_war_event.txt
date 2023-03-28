@@ -1,4 +1,4 @@
-total_war_unlock = {
+﻿total_war_event.1 = { # Everyone has access to Total Wars now
 	type = country_event
 	placement = root
 	title = total_war_unlock.t
@@ -34,11 +34,12 @@ total_war_unlock = {
 					value = true
 				}
 			}
+			add_journal_entry = je_total_war
 		}
 	}
 }
 
-total_war_begin = {
+total_war_event.2 = { # A country has started a Total War
 	type = country_event
 	placement = root
 	title = total_war_begin.t
