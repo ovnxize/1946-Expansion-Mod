@@ -151,9 +151,19 @@ rocket_artillery_desc:0 "By lighting oil and natural gases in a nozzle, we can c
 # Technology Production
 
 synthetic_rubber:0 "Synthetic Rubber"
+synthetic_rubber_desc:0 "By using the leftover waste of refining coal and combining it with chemical agents, we will be able create a rubber like substance to replace natural rubber."
 synthetic_fuel:0 "Synthetic Oils"
+synthetic_fuel_desc:0 "By liquefying coal and taking awway pollutants that come from doing so, we would be able to create a substitute for natural oils."
 power_tools:0 "Power Tools"
-analgo_computers:0 "Analog Computers"
+power_tools_desc:0 "By automating and electrifying previously manual tools like drills, we can vastly improve the productivity of our industries as well as produce better and higher quality tools."
+analog_computers:0 "Analog Computers"
+analog_computers_desc:0 "By manipulating potential voltages in a device, we could create devices that could do calculations for more efficiently than an entire team of people."
+fracking:0 "Fracking"
+fracking_desc:0 "By drilling a hole into the ground and filling it with water, sand, and chemicals, we can gain access to oil reserves that were previously unreachable."
+atomic_theory:0 "Atomic Theory"
+atomic_theory_desc:0 "By splitting an atom of radioactive materials, we can set of a chain reaction of neutrons colliding with other atoms to create a highly efficient energy source."
+chemical_pesticides:0 "Chemical Pesticides"
+chemical_pesticides_desc:0 "By using certain chemicals on crops, we can sucessfully repel insects and by extension diseases that would normally cause crops to fail, vastly increasing the productivity of our agricultural sectors."
 
 # Events
 
@@ -272,6 +282,8 @@ entertainment:0 "Entertainment"
 
 literature:0 "Literature"
 
+music:0 "Music"
+
 film:0 "Film"
 
 # Pop Types
@@ -285,3 +297,8 @@ entertainer_only_icon:0 "@entertainer!"
 
 party_nazis:0 "German Workers Party"
 ilminist:0 "Liberal Ilminist Party"
+
+# Ideologies
+
+ideology_falangist:0 "Falangist"
+ideology_natsoc:0 "National Socialist"
