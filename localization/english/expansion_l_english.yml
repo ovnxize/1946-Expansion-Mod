@@ -83,19 +83,19 @@ pm_fairs:0 "Fairs and Circuses"
 pm_art_exhibition:0 "Art Exhbits"
 pm_theater_house:0 "Theater Halls"
 pm_sports_stadium:0 "Sports Stadium"
-pm_movie_theater:0 "Movie Theaters"
 
 pm_no_theaters:0 "No Theater Acts"
 pm_plays:0 "Plays and Opera"
-pm_concerts:0 "Softball"
+pm_concerts:0 "Concerts"
 pm_movies:0 "Movies"
-pm_cycling:0 "Cycling"
 
 # Production Methods Art Academy Rework
 
 pmg_secondary_building_arts_academy:0 "Additional Art"
 pm_romanticist_literature:0 "Romanticist Literature"
 pm_naturalist_literature:0 "Naturalist Literature"
+pm_orchestral_music:0 "Orchestral Music"
+pm_big_band_music:0 "Big-band Music"
 
 # Volunteer Localization
 
