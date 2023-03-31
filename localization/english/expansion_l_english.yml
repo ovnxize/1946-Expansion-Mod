@@ -102,6 +102,7 @@ pm_big_band_music:0 "Big Band Music"
 # Production Method Ownership
 
 pm_corporate_organization:0 "Corporate Organization"
+pm_publicly_traded_building_entertainment:0 "Publicly Traded"
 
 # Volunteer Localization
 
@@ -196,7 +197,7 @@ law_disarmed_military:0 "Disarmed Military"
 law_disarmed_military_desc:0 "Whether by choice or by force, the military sector has been completely abolished."
 
 law_corporatism:0 "Corporatism"
-law_corporatism_desc:0 "An economic system that calls for the collective management of the economy as if it was the human body. The state acts as the brain and large corporations of workers of the same profession work as the organs. The state stands as a grand equalizer that ensures cooperation and continued function of the body."
+law_corporatism_desc:0 "An economic system that calls for the collective management of the economy as if it was the human body. The state acts as the brain and large corporations of workers in the same profession work as the organs."
 
 # Diplomatic Actions
 
@@ -322,3 +323,10 @@ ilminist:0 "Liberal Ilminist Party"
 
 ideology_falangist:0 "Falangist"
 ideology_natsoc:0 "National Socialist"
+
+# Institution
+
+institution_nationalization:0 "Nationalization"
+
+modifier_country_institution_nationalization_max_investment_add:0 "Max $institution_nationalization$ [concept_institution] Investment"
+modifier_country_institution_nationalization_max_investment_add_desc:0 "A bonus or penalty to the maximum investment level of the $institution_nationalization$ [concept_institution]"

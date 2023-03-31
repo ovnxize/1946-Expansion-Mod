@@ -139,6 +139,7 @@ chemical_pesticides = {
 crop_dusters = {
 	era = era_6
 	texture = "gfx/interface/icons/invention_icons/nitroglycerin.dds"
+	category = production
 
 	unlocking_technologies = {
 		mechanized_farming

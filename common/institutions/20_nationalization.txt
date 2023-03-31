@@ -1,0 +1,7 @@
+institution_nationalization = { # Max level from tech and economic law
+	icon = "gfx/interface/icons/institution_icons/nationalization.dds"
+	background_texture = "gfx/interface/illustrations/institutions/nationalization.dds"
+	modifier = {
+		country_authority_mult = 0.05
+	}
+}

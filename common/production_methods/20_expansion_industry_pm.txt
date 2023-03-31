@@ -95,5 +95,22 @@ pm_synthetic_oil_production = {
 }
 
 pm_crop_dusters = {
-	
+	texture = "gfx/interface/icons/production_method_icons/tractors.dds"
+
+	pollution_generation = 25
+
+	unlocking_technologies = {
+		crop_dusters
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods								
+			building_input_oil_add = 3
+			building_input_engines_add = 2
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -3000
+		}
+	}
 }

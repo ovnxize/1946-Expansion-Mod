@@ -2,6 +2,10 @@
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/pumpjacks.dds"
 	category = society
+
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
 }
 
 airports = {
@@ -12,15 +16,19 @@ airports = {
 	unlocking_technologies = {
 		paved_roads
 	}
+
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
 }
 
 analog_computers = {
 	era = era_6
 	texture = "gfx/interface/icons/event_icons/event_industry.dds"
-	category = production
+	category =  society
 	
 	unlocking_technologies = {	
-		electrical_capacitors
+		mass_surveillance
 	}
 
 	modifier = {
