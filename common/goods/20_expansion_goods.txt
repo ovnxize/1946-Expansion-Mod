@@ -1,0 +1,21 @@
+﻿television = {
+	texture = "gfx/interface/icons/goods_icon/television.dds"
+	cost = 80
+	category = luxury
+	tradeable = yes
+	
+	prestige_factor = 9
+	
+	consumption_tax_cost = 200
+}
+
+air_transportation = {
+	texture = "gfx/interface/icons/goods_icon/airticket.dds"
+	cost = 35
+	category = luxury
+	tradeable = no
+	
+	prestige_factor = 3
+	
+	consumption_tax_cost = 400
+}

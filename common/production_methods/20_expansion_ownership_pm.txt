@@ -1,0 +1,37 @@
+pm_government_run_building_subsistence = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+		law_corporatism
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_clergymen_add = 150
+			building_employment_bureaucrats_add = 100
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_corporate_organization = {
+	texture = "gfx/interface/icons/production_method_icons/corporate.dds"
+
+	unlocking_laws = {
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 100
+			building_employment_shopkeepers_add = 50
+		}
+	
+		unscaled = {
+			building_government_shares_add = 0.25
+			building_workforce_shares_add = 0.5
+		}
+	}
+}

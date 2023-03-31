@@ -7,6 +7,8 @@ building_barracks:0 "Infantry Barracks"
 building_suburban_center:0 "Suburban Districts"
 building_entertainment:0 "Entertainment Industries"
 
+building_war_machine_industry:0 "Heavy Machinery Industries"
+
 # Production Methods Military
 
 pmg_tank:0 "Chasis"
@@ -95,7 +97,11 @@ pmg_secondary_building_arts_academy:0 "Additional Art"
 pm_romanticist_literature:0 "Romanticist Literature"
 pm_naturalist_literature:0 "Naturalist Literature"
 pm_orchestral_music:0 "Orchestral Music"
-pm_big_band_music:0 "Big-band Music"
+pm_big_band_music:0 "Big Band Music"
+
+# Production Method Ownership
+
+pm_corporate_organization:0 "Corporate Organization"
 
 # Volunteer Localization
 
@@ -165,7 +171,11 @@ atomic_theory_desc:0 "By splitting an atom of radioactive materials, we can set 
 chemical_pesticides:0 "Chemical Pesticides"
 chemical_pesticides_desc:0 "By using certain chemicals on crops, we can sucessfully repel insects and by extension diseases that would normally cause crops to fail, vastly increasing the productivity of our agricultural sectors."
 
+television_desc:0 "We can use "invisible waves" and putting vacuum tubes and lights behind a glass screen, it is possible to transport video and audio to anyone in the world."
+
 # Events
+
+  # Total War Unlock
 
 total_war_unlock.t:0 "A New Age of War"
 total_war_unlock.f:0 "As the 19th century comes to a close, our economy, military, and technology have grown to heights never before seen in all of history. Many military theorists in our nation have theorized that as our military and production technologies increase exponentially higher, that wars will be more devastating and more traumatic than any war that has ever been fought. With the stakes so high, with all of the sacrifices that may be required, will the next war between a great power be the last war in history? Only time will tell how this new era will play out."
@@ -173,10 +183,20 @@ total_war_unlock.d:0 " “You may live to see man-made horrors beyond your compr
 total_war_unlock.o:0 "Concerning..."
 total_war_unlocked_tooltip:0 "#I Total Wars#! are now unlocked"
 
+  # Total War Begin
+
+total_war_begin.t:0 "A War to End All Wars"
+total_war_begin.d:0 "Our government has announced that all aspects of government and civilian sectors will be dedicated to the absolute destruction of our enemies."
+total_war_begin.f:0 "Every man, woman, and child, should dedicate themselves to our glorious war, lest the wish for the total destruction of everything we have built for them! There is no greater honor than to service the nation in it's greatest hour!"
+total_war_begin.0:0 "We'll be home by Christmas!"
+
 # Laws
 
 law_disarmed_military:0 "Disarmed Military"
 law_disarmed_military_desc:0 "Whether by choice or by force, the military sector has been completely abolished."
+
+law_corporatism:0 "Corporatism"
+law_corporatism_desc:0 "An economic system that calls for the collective management of the economy as if it was the human body. The state acts as the brain and large corporations of workers of the same profession work as the organs. The state stands as a grand equalizer that ensures cooperation and continued function of the body."
 
 # Diplomatic Actions
 

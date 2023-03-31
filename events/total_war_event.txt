@@ -34,7 +34,6 @@
 					value = true
 				}
 			}
-			add_journal_entry = je_total_war
 		}
 	}
 }
@@ -61,8 +60,9 @@ total_war_event.2 = { # A country has started a Total War
 			country = root
 		}
 
-		add_modifier = {
-			name = fighting_total_war 
-		}
+		add_journal_entry = {
+			type = je_total_war
+			target = root
+		} 
 	}
 }

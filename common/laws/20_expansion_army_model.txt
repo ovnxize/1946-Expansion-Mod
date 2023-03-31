@@ -84,7 +84,7 @@
 	}
 	
 	pop_support = {
-		value = -10
+		value = -100
 	}
 
 	ai_will_do = {

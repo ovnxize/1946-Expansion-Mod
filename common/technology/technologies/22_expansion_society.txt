@@ -13,3 +13,22 @@ airports = {
 		paved_roads
 	}
 }
+
+analog_computers = {
+	era = era_6
+	texture = "gfx/interface/icons/event_icons/event_industry.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		electrical_capacitors
+	}
+
+	modifier = {
+		country_weekly_innovation_mult = 0.15
+		country_bureaucracy_mult = 0.1
+	}
+	
+	ai_weight = {
+		value = 2 # Important tech in general
+	}
+}
