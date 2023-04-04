@@ -1,0 +1,27 @@
+institution_nationalization_event.1 = {
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		root = {
+			if = {
+				limit = {
+					institution_investment_level = {
+						institution = institution_nationalization
+						value = 1
+					}
+				}
+					activate_law = law_type:law_nationalization_first
+			}
+			else_if = {
+				limit = {
+					institution_investment_level = {
+						institution = institution_nationalization
+						value = 2
+					}
+				}
+					activate_law = law_type:law_nationalization_second
+			}
+		}
+	}
+}

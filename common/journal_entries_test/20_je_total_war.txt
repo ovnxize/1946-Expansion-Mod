@@ -1,0 +1,24 @@
+﻿je_total_war = {
+	# root = the owner of the Journal Entry (country scope)
+	# scope:journal_entry = this Journal Entry (journalentry scope)
+	# scope:target = target value, with which this Journal Entry was added using `add_journal_entry` effect
+
+	# optional image that shows in the journal entry widget near the description, default = NDefines::GUI::JOURNAL_ENTRY_ICON_DEFAULT (set in /defines/00_interfaces.txt)
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	# optional trigger which determines if a journal entry can be shown, default = no
+	# is ignored when JE is added through `add_journal_entry` effect
+	is_shown_when_inactive = { is_player = yes }
+
+	# one or more scripted buttons. See common/scripted_buttons/_scripted_buttons.info for more info
+	scripted_button = scripted_button_key
+
+	# optional trigger - when both this and is_shown_when_inactive is true, the JE is Activated, default = yes
+	# is ignored when JE is added through `add_journal_entry` effect
+
+	trigger = no
+
+	immediate = {
+
+	}
+}

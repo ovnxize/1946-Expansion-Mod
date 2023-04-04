@@ -1,10 +1,20 @@
 lawgroup_weapons_of_mass_destruction = {
-	law_group_category = power_structure
+	law_group_category = human_rights
 	base_enactment_days = 120
 	enactment_approval_mult = 2.0
 	
 	progressive_movement_chance = 1
 	regressive_movement_chance = 0.25
+	
+	change_allowed_trigger = {
+		NOT = {}
+	}
+}
+
+lawgroup_nationalization_levels = {
+
+	progressive_movement_chance = 0
+	regressive_movement_chance = 0.0
 	
 	change_allowed_trigger = {
 		NOT = {}

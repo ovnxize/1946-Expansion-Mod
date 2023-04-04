@@ -3,5 +3,6 @@ institution_nationalization = { # Max level from tech and economic law
 	background_texture = "gfx/interface/illustrations/institutions/nationalization.dds"
 	modifier = {
 		country_authority_mult = 0.05
+		country_private_construction_allocation_mult = -0.10
 	}
 }

@@ -327,6 +327,24 @@ ideology_natsoc:0 "National Socialist"
 # Institution
 
 institution_nationalization:0 "Nationalization"
+institution_nationalization_desc:0 "The institution that is tasked with appropiating and managing how much of the economy is government owned."
 
 modifier_country_institution_nationalization_max_investment_add:0 "Max $institution_nationalization$ [concept_institution] Investment"
 modifier_country_institution_nationalization_max_investment_add_desc:0 "A bonus or penalty to the maximum investment level of the $institution_nationalization$ [concept_institution]"
+
+lawgroup_nationalization_levels:0 "Nationalization Law"
+
+law_nationalization_first:0 "Nationalization First Level"
+law_nationalization_first_desc:0 "Nationalization First Level"
+
+law_nationalization_second:0 "Nationalization Second Level"
+law_nationalization_second_desc:0 "Nationalization Second Level"
+
+law_nationalization_third:0 "Nationalization Third Level"
+law_nationalization_third_desc:0 "Nationalization Third Level"
+
+law_nationalization_fourth:0 "Nationalization Fourth Level"
+law_nationalization_fourth_desc:0 "Nationalization Fourth Level"
+
+law_nationalization_fifth:0 "Nationalization Fifth Level"
+law_nationalization_fifth_desc:0 "Nationalization Fifth Level"

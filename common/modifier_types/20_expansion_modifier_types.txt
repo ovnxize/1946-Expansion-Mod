@@ -11,7 +11,7 @@ character_command_limit_combat_unit_tank_add = {
 	num_decimals = 0
 }
 
-modifier_country_institution_nationalization_max_investment_add = {
+country_institution_nationalization_max_investment_add = {
 	good = yes
 	percent = no
 	num_decimals = 0

@@ -114,3 +114,21 @@ pm_crop_dusters = {
 		}
 	}
 }
+
+pm_tvs = {
+	texture = "gfx/interface/icons/production_method_icons/unused/vacuum_tubes.dds"
+	unlocking_technologies = {
+		television
+	}	
+	building_modifiers = {
+		workforce_scaled = {
+			building_input_electricity_add = 60
+			building_output_telephones_add = -15
+			building_output_television_add = 35
+		}
+		
+		level_scaled = {
+			building_employment_engineers_add = 1000
+		}
+	}
+}

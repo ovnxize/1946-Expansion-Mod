@@ -1,0 +1,35 @@
+# Root = Institution
+on_investment_increased = {
+	effect = {
+		post_notification = institution_investment_increased
+		trigger_event = { id = institution_nationalization_event.1 }
+	}
+}
+
+# Root = Institution
+on_investment_decreased = {
+	effect = {
+		post_notification = institution_investment_decreased
+		trigger_event = { id = institution_nationalization_event.1 }
+	}
+}
+
+change_nationalization_level_action = {
+	events = {
+		institution_nationalization_event.1
+	}
+}
+
+# Total War Unlock
+
+on_monthly_pulse_country = {
+	on_actions = {
+	  unloack_total_war_action
+	}
+  }
+  
+  unloack_total_war_action = {
+	events = {
+		total_war_event.1
+	}
+  }
