@@ -104,6 +104,11 @@ pm_big_band_music:0 "Big Band Music"
 pm_corporate_organization:0 "Corporate Organization"
 pm_publicly_traded_building_entertainment:0 "Publicly Traded"
 
+pm_government_run_light_industry:0 "Government Run"
+pm_government_run_heavy_industry:0 "Government Run"
+
+pm_trade_center_corporatism:0 "Corporate Organization"
+
 # Volunteer Localization
 
 pmg_organization_skirmish:0 "Organization"
@@ -198,6 +203,9 @@ law_disarmed_military_desc:0 "Whether by choice or by force, the military sector
 
 law_corporatism:0 "Corporatism"
 law_corporatism_desc:0 "An economic system that calls for the collective management of the economy as if it was the human body. The state acts as the brain and large corporations of workers in the same profession work as the organs."
+
+lawgroup_weapons_of_mass_destruction:0 "Atrocities"
+law_disbanded_wmds:0 "No Atrocities"
 
 # Diplomatic Actions
 
@@ -335,16 +343,16 @@ modifier_country_institution_nationalization_max_investment_add_desc:0 "A bonus 
 lawgroup_nationalization_levels:0 "Nationalization Law"
 
 law_nationalization_first:0 "Nationalization First Level"
-law_nationalization_first_desc:0 "Nationalization First Level"
+law_nationalization_first_desc:0 "Allows Railroads to be Government Owned."
 
 law_nationalization_second:0 "Nationalization Second Level"
-law_nationalization_second_desc:0 "Nationalization Second Level"
+law_nationalization_second_desc:0 "Allows Railroads and Mining Industries to be Government Owned."
 
 law_nationalization_third:0 "Nationalization Third Level"
-law_nationalization_third_desc:0 "Nationalization Third Level"
+law_nationalization_third_desc:0 "Allows Railroads, Mining Industries, and Heavy Industry to be Government Owned."
 
 law_nationalization_fourth:0 "Nationalization Fourth Level"
-law_nationalization_fourth_desc:0 "Nationalization Fourth Level"
+law_nationalization_fourth_desc:0 "Allows Railroads, Mining Industries, Heavy Industry, and Lught Industry to be Government Owned."
 
 law_nationalization_fifth:0 "Nationalization Fifth Level"
-law_nationalization_fifth_desc:0 "Nationalization Fifth Level"
+law_nationalization_fifth_desc:0 "All industries are owned by the Government."  

@@ -1,0 +1,199 @@
+﻿# Heavy Industry
+
+    pmg_ownership_capital_building_chemical_plants = {
+        texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+        production_methods = {
+            pm_privately_owned_industry
+            pm_publicly_traded_building_chemical_plants
+            pm_government_run_heavy_industry
+            pm_worker_cooperative_industry
+        }
+    }
+
+    pmg_ownership_capital_building_steel_mills = {
+        texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+        production_methods = {
+            pm_privately_owned_industry
+            pm_publicly_traded_building_steel_mills
+            pm_government_run_heavy_industry
+            pm_worker_cooperative_industry
+        }
+    }
+
+    pmg_ownership_capital_building_motor_industry = {
+        texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+        production_methods = {
+            pm_privately_owned_industry
+            pm_publicly_traded_building_motor_industries
+            pm_government_run_heavy_industry
+            pm_worker_cooperative_industry
+        }
+    }
+
+    pmg_ownership_capital_building_war_machine_industry = {
+        texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+        production_methods = {
+            pm_privately_owned_industry
+            pm_publicly_traded_building_war_machines_induestries
+            pm_government_run_heavy_industry
+            pm_worker_cooperative_industry
+        }
+    }
+
+    pmg_ownership_capital_building_electrics_industry = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+            pm_privately_owned_industry
+            pm_publicly_traded_building_electrics_industries
+            pm_government_run_heavy_industry
+            pm_worker_cooperative_industry
+	    }
+    }
+
+    pmg_ownership_capital_building_munition_plants = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_privately_owned_industry
+		    pm_publicly_traded_building_munition_plants
+		    pm_government_run_heavy_industry
+		    pm_worker_cooperative_industry
+	    }
+    }
+
+    pmg_ownership_capital_building_power_plant = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_privately_owned_industry
+		    pm_publicly_traded_building_power_plant
+		    pm_government_run_heavy_industry
+		    pm_worker_cooperative_industry
+	    }
+    }
+
+    pmg_ownership_capital_building_arms_industry = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_merchant_guilds_building_arms_industry
+		    pm_privately_owned_building_arms_industry
+		    pm_publicly_traded_building_arms_industry
+		    pm_government_run_heavy_industry
+		    pm_worker_cooperative_building_arms_industry
+	    }
+    }
+  
+# Light Industry
+
+    pmg_ownership_capital_building_oil_rig = {
+        texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+        production_methods = {
+            pm_privately_owned_industry
+            pm_publicly_traded_building_oil_rig
+            pm_government_run_light_industry
+            pm_worker_cooperative_industry
+        }
+    }
+
+    pmg_ownership_capital_building_food_industry = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_merchant_guilds_building_food_industry
+		    pm_privately_owned_building_food_industry
+		    pm_publicly_traded_building_food_industry
+		    pm_government_run_light_industry
+		    pm_worker_cooperative_building_food_industry
+	    }
+    }
+
+    pmg_ownership_capital_building_textile_mills = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_merchant_guilds_building_textile_mills
+		    pm_privately_owned_building_textile_mills
+		    pm_publicly_traded_building_textile_mills
+		    pm_government_run_light_industry
+		    pm_worker_cooperative_building_textile_mills
+	    }
+    }
+
+    pmg_ownership_capital_building_furniture_manufacturies = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_merchant_guilds_building_furniture_manufacturies
+		    pm_privately_owned_building_furniture_manufacturies
+		    pm_publicly_traded_building_furniture_manufacturies
+		    pm_government_run_light_industry
+		    pm_worker_cooperative_building_furniture_manufacturies
+	    }
+    }
+
+    pmg_ownership_capital_building_tooling_workshops = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_merchant_guilds_building_tooling_workshops
+		    pm_privately_owned_building_tooling_workshops
+		    pm_publicly_traded_building_tooling_workshops
+		    pm_government_run_light_industry
+		    pm_worker_cooperative_building_tooling_workshops
+	    }
+    }
+
+    pmg_ownership_capital_building_glassworks = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_merchant_guilds_building_glassworks
+		    pm_privately_owned_building_glassworks
+		    pm_publicly_traded_building_glassworks
+		    pm_government_run_light_industry
+		    pm_worker_cooperative_building_glassworks
+	    }   
+    }
+
+    pmg_ownership_capital_building_paper_mills = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_merchant_guilds_building_paper_mills
+		    pm_privately_owned_building_paper_mills
+		    pm_publicly_traded_building_paper_mills
+		    pm_government_run_light_industry
+		    pm_worker_cooperative_building_paper_mills
+	    }
+    }
+
+    pmg_ownership_capital_building_shipyards = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    production_methods = {
+		    pm_merchant_guilds_building_shipyards
+		    pm_privately_owned_building_shipyards
+		    pm_publicly_traded_building_shipyards
+		    pm_government_run_light_industry
+		    pm_worker_cooperative_building_shipyards
+	    }
+    }
+
+# Railroad
+
+    pmg_ownership_capital_building_railway = {
+        texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+        production_methods = {
+            pm_privately_owned_building_railway
+            pm_publicly_traded_building_railway
+            pm_government_run_building_railway
+            pm_corporate_organization_railway
+            pm_worker_cooperative_building_railway
+        }
+    }
+
+# Trade Center
+
+    pmg_ownership_building_trade_center = {
+	    texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	    ai_selection = most_productive
+
+	    production_methods = {
+		    pm_trade_center_merchant_guilds
+		    pm_trade_center_privately_owned
+		    pm_trade_center_government_run
+            pm_trade_center_corporatism
+            pm_corporate_organization_trade_center
+	    }
+    }

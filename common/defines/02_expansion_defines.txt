@@ -1,60 +1,8 @@
 ﻿NGame = {
 	START_DATE = "1836.1.1" 
-	END_DATE = "1947.1.1" 
+	END_DATE = "1949.1.1" 
 	SAVE_VERSION = 0
 	MP_LAG_TICKS_BOUNDS = 28 # Host will advance up to a week ahead of players ( 7 * 4 )
 	DEAD_OBJ_UNDESTROYED_DAYS = 0	# number of days "killed"/removed objects will persist in memory before ultimately destroyed as they are referenced by events etc
 	MAX_NUMBER_OF_AUTOSAVES = 5 	# The game will only keep the MAX_NUMBER_OF_AUTOSAVES latest autosaves.
-}
-
-NBattle = {
-	CASUALTY_MAJORITY_CULTURE_WEIGHT = 1.5			# Majority culture pops will be weighted to take 1.5x more casualties
-	CASUALTY_ROLL_MIN = 50							# min ...
-	CASUALTY_ROLL_MAX = 200							# max amount of casualties a unit can take each roll when applying casualties to units
-	SURVIVAL_RATE = 0.66
-	DEPENDENTS_ROLL_MIN_PERCENT = 0.1				# min ...
-	DEPENDENTS_ROLL_MAX_PERCENT = 0.3				# max percentage of Pops Size it can take as Dependents each roll
-	MIN_DEPENDENTS_PER_ROLL = 25					# Minimum amount of dependents to added to a random pop
-	
-	CHANCE_OF_POPULARITY_NARROW_VICTORY = 0.5		# The chance (0-1) to be affected by popularity for a narrow victory (start with numeric advantage, end with numeric disadvantage)
-	CHANCE_OF_POPULARITY_NORMAL_VICTORY	= 0.1		# The chance (0-1) to be affected by popularity for a normal victory (any victory that's not narrow or heroic)
-	CHANCE_OF_POPULARITY_HEROIC_VICTORY	= 1.0		# The chance (0-1) to be affected by popularity for a heroic victory (start with numeric disadvantage against a more prestigious nation)
-	POPULARITY_GAIN_NARROW_VICTORY = 3				# Multiple of commander_battle_end_victory modifier the winner should get for a narrow victory if the random chance roll is true
-	POPULARITY_GAIN_NORMAL_VICTORY = 2				# Multiple of commander_battle_end_victory modifier the winner should get for a normal victory if the random chance roll is true
-	POPULARITY_GAIN_HEROIC_VICTORY = 5				# Multiple of commander_battle_end_victory modifier the winner should get for a heroic victory if the random chance roll is true
-	POPULARITY_GAIN_NARROW_LOSS	= -3				# Multiple of commander_battle_end_loss modifier the loser should get for a narrow victory for the other side if the random chance roll is true
-	POPULARITY_GAIN_NORMAL_LOSS	= -2				# Multiple of commander_battle_end_loss modifier the loser should get for a normal victory for the other side if the random chance roll is true
-	POPULARITY_GAIN_HEROIC_LOSS = -5				# Multiple of commander_battle_end_loss modifier the loser should get for a heroic victory for the other side if the random chance roll is true
-	POPULARITY_DECAY_MONTHS = 60					# The number of months battle popularity modifiers decay over
-}
-
-NWar = {
-	DEVASTATION_MAX = 100.0
-	DEVASTATION_INCREASE_RATE = 0.1 # Per day, scales with level of occupation
-	DEVASTATION_DECAY_RATE = -0.1 # Per day, when there are no occupations
-	DEVASTATION_FROM_BATTLES = 0.1 # For each battle
-
-	AUTO_CAPITULATE_WAR_SUPPORT = -100 # When war support is this low, the country will auto capitulate
-	DAYS_BETWEEN_WAR_EXHAUSTION = 7 # Every this many days war support will be reduced by the war exhaustion formula
-	WAR_EXHAUSTION_BASE = 0.20
-	WAR_EXHAUSTION_KIA_FACTOR = 20.0 # Scaled by casualties compared to total manpower
-	WAR_EXHAUSTION_KIA_BASE_MULTIPLIER = 0.1	# War Exhaustion from casualties is always multiplied by at least this
-	WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER = 0.25 	# At 100% of battles lost by our side, War Exhaustion from casualties is further multiplied by this 
-	WAR_EXHAUSTION_TURMOIL_FACTOR = 2.0 # At 100% turmoil
-	WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS = 1.0
-	OCCUPATION_STATE_BASE_WEIGHT = 1
-	OCCUPATION_STATE_POP_WEIGHT = 1
-	OCCUPATION_STATE_INCORPORATED_WEIGHT = 10
-	
-	STATE_CONQUEST_HOMELAND_AND_CLAIM_RADICALIZATION = 0.1
-	STATE_CONQUEST_HOMELAND_AND_CLAIM_DEMILITARIZATION = 0.25
-	STATE_CONQUEST_HOMELAND_OR_CLAIM_RADICALIZATION = 0.2
-	STATE_CONQUEST_HOMELAND_OR_CLAIM_DEMILITARIZATION = 0.5
-	STATE_CONQUEST_DEFAULT_RADICALIZATION = 0.4
-	STATE_CONQUEST_DEFAULT_DEMILITARIZATION = 0.75
-
-	NUM_PROVINCES_FOR_ADVANCEMENT_SELECTION = 8		# After having computed weights for possible advancement provinces using front_battle_province_weight, filter out all but the X top weighted provinces
-	MAX_SIMULTANEOUS_BATTLES = 2                    # Allows to spawn up to MAX_SIMULTANEOUS_BATTLES as long as you have that many generals with advance orders.
-	LOCK_PROVINCE_CAPTURE_TO_SINGLE_STATE = no      # If `yes`, provinces will only be captured on the same state as the battle province state.
-	PREFER_BATTLES_IN_UNIQUE_STATES = yes            # If `yes`, will avoid creating ANY battles in the same state UNLESS there's no other option.
 }

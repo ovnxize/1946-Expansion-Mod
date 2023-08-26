@@ -10,13 +10,3 @@ lawgroup_weapons_of_mass_destruction = {
 		NOT = {}
 	}
 }
-
-lawgroup_nationalization_levels = {
-
-	progressive_movement_chance = 0
-	regressive_movement_chance = 0.0
-	
-	change_allowed_trigger = {
-		NOT = {}
-	}
-}
